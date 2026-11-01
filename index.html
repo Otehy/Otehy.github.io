@@ -4,688 +4,276 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Flyniton | Parapente en Baños y Pelileo, Tungurahua</title>
-<meta name="description" content="Vuelos en parapente tándem desde el Cerro Niton (3.000 msnm) con vista al volcán Tungurahua, escuela de parapente y equipos BGD. Oficina en Baños de Agua Santa, Ecuador.">
-<meta name="theme-color" content="#0E2A47">
+<meta name="description" content="Vuelos en parapente tándem desde el Cerro Niton (3.000 msnm) con vista al volcán Tungurahua, escuela de parapente y equipos importados BGD. Oficina en Baños de Agua Santa, Ecuador.">
+<meta name="theme-color" content="#10233F">
 <meta property="og:title" content="Flyniton | Parapente sobre el Tungurahua">
-<meta property="og:description" content="Vuelos tándem desde el Cerro Niton, escuela de parapente y equipos BGD en Tungurahua, Ecuador.">
+<meta property="og:description" content="Vuelos tándem desde el Cerro Niton, escuela de parapente y equipos importados BGD en Tungurahua, Ecuador.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%231C8A4B'/%3E%3Cstop offset='.33' stop-color='%231C8A4B'/%3E%3Cstop offset='.33' stop-color='%23F2B705'/%3E%3Cstop offset='.5' stop-color='%23F2B705'/%3E%3Cstop offset='.5' stop-color='%23D9262C'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M6 28 Q32 2 58 28 Q32 16 6 28Z' fill='url(%23g)'/%3E%3Cpath d='M8 28 L32 54 L56 28' fill='none' stroke='%230E2A47' stroke-width='2'/%3E%3Ccircle cx='32' cy='55' r='4' fill='%230E2A47'/%3E%3C/svg%3E">
-<meta property="og:image" content="img/hero.webp">
-
-
+<meta property="og:url" content="https://otehy.github.io/">
+<meta property="og:image" content="https://otehy.github.io/img/hero.webp">
+<link rel="canonical" href="https://otehy.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='.33' stop-color='%2313804F'/%3E%3Cstop offset='.33' stop-color='%23F6C51B'/%3E%3Cstop offset='.5' stop-color='%23F6C51B'/%3E%3Cstop offset='.5' stop-color='%23D8342B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M6 28 Q32 2 58 28 Q32 16 6 28Z' fill='url(%23g)'/%3E%3Cpath d='M8 28 L32 54 L56 28' fill='none' stroke='%2310233F' stroke-width='2'/%3E%3Ccircle cx='32' cy='55' r='4' fill='%2310233F'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
-<script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<style>
-/* Layout: cinematic dusk page graded from the client's golden-hour photos. Floating pill nav, full-bleed hero cut by a
-   volcano silhouette, an interactive 3D relief of the flying site, one daylight band (school), bento gallery, sunset booking panel. */
-:root{
-  color-scheme:dark;
-  --night:#0C1A33;        /* Andean dusk, page ground */
-  --night-2:#11223F;      /* raised surface */
-  --dusk:#1A2F55;         /* cards, hovers */
-  --slate:#384D67;        /* sampled from the sunset photo */
-  --line:rgba(169,188,216,.16);
-  --line-2:rgba(169,188,216,.30);
-  --text:#F1F5FB;
-  --haze:#A9BCD8;         /* sampled sky blue: secondary text on dusk */
-  --gold:#FFC65A;         /* sun */
-  --ember:#FF7A3D;        /* sunset */
-  --flame:#EF5148;
-  --sunset:linear-gradient(115deg,#FFC65A 0%,#FF8A3D 48%,#EF5148 100%);
-  --g:#2BA864; --y:#F7C21B; --r:#E53935;   /* the school wing */
-  --tricolor:linear-gradient(90deg,var(--g) 0 33.3%,var(--y) 33.3% 50%,var(--r) 50% 100%);
-  --sky-1:#BCD5EF; --sky-2:#EEF3F9;        /* daylight band */
-  --ink:#0B1A36; --ink-2:#3B4D6B;
-  --glass:rgba(17,34,63,.62);
-  --glass-hi:rgba(255,255,255,.07);
-
-  --font-display:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;
-  --font-body:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-
-  --fs-hero:clamp(2.6rem,1.2rem + 8vw,8.6rem);
-  --fs-h2:clamp(2.2rem,1.3rem + 3.3vw,4.2rem);
-  --fs-h3:clamp(1.2rem,1.1rem + .4vw,1.45rem);
-  --fs-lead:clamp(1.05rem,.98rem + .35vw,1.25rem);
-  --gutter:max(20px, env(safe-area-inset-left, 0px));
-  --gutter-r:max(20px, env(safe-area-inset-right, 0px));
-  --ease:cubic-bezier(.2,.75,.2,1);
-}
-[hidden]{display:none!important}
-html{scroll-behavior:smooth;scroll-padding-top:104px;background:var(--night)}
-body{background:var(--night);color:var(--text)}
-.site{font-family:var(--font-body);font-size:1rem;line-height:1.65;color:var(--text);background:var(--night);overflow-x:clip;-webkit-font-smoothing:antialiased;position:relative}
-.site::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:70;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-
-html:not(.lang-en) [data-l="en"]{display:none!important}
-html.lang-en [data-l="es"]{display:none!important}
-
-.wrap{max-width:1240px;margin-inline:auto;padding-left:var(--gutter);padding-right:var(--gutter-r)}
-.sec{padding-block:clamp(80px,10vw,140px);position:relative}
-.display{font-family:var(--font-display);font-weight:800;font-variation-settings:"wdth" 80;letter-spacing:-.03em;line-height:.92;text-wrap:balance}
-.h2{font-size:var(--fs-h2)}
-.h3{font-family:var(--font-display);font-weight:700;font-variation-settings:"wdth" 92;font-size:var(--fs-h3);line-height:1.15;letter-spacing:-.01em}
-.lead{font-size:var(--fs-lead);line-height:1.6;color:var(--haze);max-width:58ch;text-wrap:pretty}
-.haze{color:var(--haze)}
-.small{font-size:.9rem;line-height:1.55}
-.num{font-variant-numeric:tabular-nums}
-.grad-text{background:var(--sunset);-webkit-background-clip:text;background-clip:text;color:transparent}
-a{color:inherit}
-.link{color:var(--gold);text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px}
-:where(a,button,input,select,textarea,canvas,[tabindex]):focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:8px}
-
-/* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:48px;font-family:var(--font-body);font-weight:700;font-size:1rem;line-height:1.2;padding:.85rem 1.5rem;border-radius:999px;text-decoration:none;cursor:pointer;transition:filter .2s ease,box-shadow .2s ease,background-color .2s ease,border-color .2s ease;text-align:center;border:0}
-.btn svg{width:1.25em;height:1.25em;flex:none}
-.btn-sun{background:var(--sunset);color:var(--ink);box-shadow:0 14px 34px -14px rgba(255,122,61,.85)}
-.btn-sun:hover{filter:brightness(1.07) saturate(1.08);box-shadow:0 18px 40px -12px rgba(255,122,61,1)}
-.btn-ghost{background:rgba(255,255,255,.1);color:var(--text);border:1px solid rgba(255,255,255,.35);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
-.btn-ghost:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.6)}
-.btn-ink{background:var(--ink);color:var(--gold)}
-.btn-ink:hover{background:#13274D}
-.btn-sm{min-height:44px;padding:.7rem 1.1rem;font-size:.92rem}
-
-/* floating nav */
-.nav-shell{position:fixed;z-index:50;top:calc(12px + env(safe-area-inset-top,0px));left:0;right:0;pointer-events:none}
-.nav-pill{pointer-events:auto;max-width:1240px;margin-inline:auto;display:flex;align-items:center;gap:.6rem;height:66px;padding:0 .6rem 0 1.1rem;border-radius:999px;background:rgba(12,26,51,.38);border:1px solid rgba(255,255,255,.14);-webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4);transition:background-color .25s ease,box-shadow .25s ease}
-.nav-shell .wrap{padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}
-.nav-shell.scrolled .nav-pill{background:rgba(12,26,51,.86);box-shadow:0 18px 40px -20px rgba(0,0,0,.7)}
-.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none;flex:none;min-height:44px}
-.brand img{height:40px;width:auto}
-.bgd-badge{font-size:.7rem;font-weight:700;line-height:1.15;padding:.35rem .55rem;border-radius:8px;border:1px solid rgba(255,255,255,.35);color:var(--haze)}
-.nav{display:flex;gap:.1rem;margin-left:auto}
-.nav a{font-weight:600;font-size:.92rem;text-decoration:none;padding:.6rem .75rem;border-radius:999px;color:rgba(241,245,251,.86);transition:background-color .2s,color .2s;min-height:44px;display:inline-flex;align-items:center}
-.nav a:hover{background:rgba(255,255,255,.09);color:#fff}
-.nav a[aria-current="true"]{color:var(--gold)}
-.lang{display:inline-flex;border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:3px;flex:none}
-.lang button{font:700 .8rem/1 var(--font-body);min-width:40px;min-height:36px;padding:0 .6rem;border-radius:999px;color:var(--text);background:transparent;cursor:pointer;transition:background-color .2s,color .2s}
-.lang button[aria-pressed="true"]{background:var(--text);color:var(--ink)}
-.menu-btn{display:none;width:46px;height:46px;border-radius:50%;align-items:center;justify-content:center;color:var(--text);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);cursor:pointer}
-.mobile-nav{pointer-events:auto;margin:.5rem max(12px,env(safe-area-inset-right,0px)) 0 max(12px,env(safe-area-inset-left,0px));background:rgba(12,26,51,.96);border:1px solid var(--line-2);border-radius:24px;padding:.6rem 1rem 1.1rem;display:grid;box-shadow:0 30px 60px -30px rgba(0,0,0,.8);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
-.mobile-nav a{font-weight:600;padding:.9rem .4rem;border-bottom:1px solid var(--line);text-decoration:none}
-.mobile-nav .btn{margin-top:.9rem;border-bottom:0}
-@media (max-width:1140px){.nav{display:none}.menu-btn{display:inline-flex}.nav-cta{display:none}.lang{margin-left:auto}}
-@media (min-width:1141px){.mobile-nav{display:none!important}}
-@media (max-width:640px){.bgd-badge{display:none}.brand img{height:34px}.nav-pill{height:60px;padding-left:.9rem}}
-
-/* hero */
-.hero{position:relative;isolation:isolate;overflow:hidden;min-height:clamp(640px,100svh,980px);display:flex;align-items:flex-end;background:var(--night)}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% 34%;z-index:-3;transform-origin:62% 26%;animation:drift 24s var(--ease) both;filter:saturate(1.08) contrast(1.04)}
-.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:
-  radial-gradient(60% 50% at 78% 18%,rgba(255,198,90,.22),transparent 70%),
-  linear-gradient(180deg,rgba(12,26,51,.45) 0%,rgba(12,26,51,0) 26%,rgba(12,26,51,.18) 52%,rgba(12,26,51,.92) 88%,var(--night) 100%),
-  linear-gradient(90deg,rgba(12,26,51,.62) 0%,rgba(12,26,51,.12) 58%,rgba(12,26,51,0) 100%)}
-.clouds{position:absolute;inset:-10% -20%;z-index:-1;pointer-events:none;opacity:.55;background:
-  radial-gradient(28% 10% at 20% 62%,rgba(255,255,255,.16),transparent 70%),
-  radial-gradient(22% 8% at 70% 70%,rgba(255,255,255,.12),transparent 70%),
-  radial-gradient(30% 9% at 45% 80%,rgba(255,255,255,.10),transparent 70%);animation:clouds 60s linear infinite alternate}
-.hero-inner{width:100%;padding-block:150px 120px;position:relative}
-.hero h1{font-size:var(--fs-hero);font-variation-settings:"wdth" 76;text-shadow:0 6px 50px rgba(0,0,0,.28)}
-.hero h1 .ln{display:block}
-.hero h1 .ln + .ln{padding-left:clamp(0rem,4vw,4.5rem)}
-.hero-sub{font-size:var(--fs-lead);max-width:52ch;color:rgba(241,245,251,.9);margin-top:1.6rem}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.1rem}
-.readouts{margin-top:clamp(2.6rem,5vw,4.2rem);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-radius:22px;overflow:hidden;background:rgba(12,26,51,.42);border:1px solid rgba(255,255,255,.16);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);position:relative;max-width:980px}
-.readouts::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--tricolor)}
-.readout{padding:1.4rem 1.4rem 1.25rem;border-left:1px solid rgba(255,255,255,.12);min-width:0}
-.readout:first-child{border-left:0}
-.readout b{display:block;font-family:var(--font-display);font-weight:700;font-variation-settings:"wdth" 82;font-size:clamp(1.7rem,1.2rem + 1.5vw,2.5rem);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.readout b small{font-size:.48em;font-weight:600;letter-spacing:0;margin-left:.15em;color:var(--gold)}
-.readout span{display:block;margin-top:.5rem;font-size:.88rem;line-height:1.35;color:rgba(241,245,251,.78)}
-@media (max-width:760px){.readouts{grid-template-columns:repeat(2,minmax(0,1fr))}.readout:nth-child(3){border-left:0}.readout:nth-child(n+3){border-top:1px solid rgba(255,255,255,.12)}}
-.badge{position:absolute;right:var(--gutter-r);top:clamp(130px,22vh,220px);width:150px;height:150px;display:grid;place-items:center}
-.badge svg.ring{position:absolute;inset:0;width:100%;height:100%;animation:spin 26s linear infinite}
-.badge svg.ring text{font:700 10.5px var(--font-body);letter-spacing:.2em;fill:var(--text)}
-.badge .core{width:64px;height:64px;border-radius:50%;background:var(--sunset);display:grid;place-items:center;box-shadow:0 12px 30px -10px rgba(255,122,61,.9)}
-.badge .core svg{width:34px;height:34px;color:var(--ink)}
-@media (max-width:980px){.badge{display:none}}
-.ridge{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:clamp(60px,9vw,130px);display:block;z-index:1}
-.ridge path{fill:var(--night)}
-.hero .ln,.hero-sub,.hero-ctas,.readouts{animation:rise 1s var(--ease) both}
-.hero .ln:nth-child(2){animation-delay:.09s}
-.hero-sub{animation-delay:.22s}
-.hero-ctas{animation-delay:.32s}
-.readouts{animation-delay:.48s}
-@keyframes rise{from{opacity:0;transform:translateY(30px)}}
-@keyframes drift{from{transform:scale(1.1)}to{transform:scale(1)}}
-@keyframes clouds{from{transform:translateX(-4%)}to{transform:translateX(6%)}}
-@keyframes spin{to{transform:rotate(360deg)}}
-
-/* marquee */
-.marquee{position:relative;overflow:hidden;border-block:1px solid var(--line);background:var(--night-2);padding-block:1.05rem}
-.marquee .track{display:flex;width:max-content;gap:2.2rem;animation:marq 40s linear infinite}
-.marquee span.item{display:inline-flex;align-items:center;gap:2.2rem;font-family:var(--font-display);font-weight:700;font-variation-settings:"wdth" 85;font-size:clamp(1.15rem,1rem + .8vw,1.7rem);letter-spacing:-.01em;white-space:nowrap;color:var(--text)}
-.marquee span.item i{display:inline-block;width:34px;height:14px;border-radius:34px 34px 4px 4px;background:var(--tricolor);flex:none}
-.marquee span.item em{font-style:normal;color:var(--haze);font-weight:600}
-@keyframes marq{to{transform:translateX(-50%)}}
-
-/* about */
-.about-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(2.5rem,6vw,6rem);align-items:center}
-.about h2{max-width:13ch}
-.facts{display:grid;gap:.8rem;margin-top:2.2rem;padding:0;list-style:none}
-.facts li{display:grid;grid-template-columns:2.8rem minmax(0,1fr);gap:1rem;align-items:start;padding:1rem 1.1rem;border-radius:18px;background:var(--glass-hi);border:1px solid var(--line)}
-.facts .ico{width:2.8rem;height:2.8rem;border-radius:14px;display:grid;place-items:center;background:rgba(255,198,90,.12);color:var(--gold)}
-.facts .ico svg{width:1.35rem;height:1.35rem}
-.facts strong{display:block;font-weight:700;line-height:1.35}
-.facts span.haze{display:block;font-size:.93rem;line-height:1.5;margin-top:.15rem}
-.stack{position:relative;aspect-ratio:1/1.08;perspective:1200px}
-.stack figure{position:absolute;margin:0;border-radius:26px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.9);background:var(--dusk);transition:transform .3s ease}
-.stack img{width:100%;height:100%;object-fit:cover;display:block}
-.stack .s1{left:0;top:0;width:64%;height:74%;transform:rotate(-3deg)}
-.stack .s2{right:0;bottom:0;width:58%;height:66%;transform:rotate(3deg);outline:6px solid var(--night)}
-.stack figcaption{position:absolute;left:.8rem;right:.8rem;bottom:.8rem;font-size:.8rem;line-height:1.35;color:#fff;background:rgba(12,26,51,.66);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:.55rem .75rem;border-radius:12px}
-.stack .sticker{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%) rotate(-8deg);z-index:2;background:var(--y);color:var(--ink);font-family:var(--font-display);font-weight:800;font-variation-settings:"wdth" 80;font-size:1.05rem;line-height:1.05;padding:.75rem .95rem;border-radius:14px;box-shadow:0 18px 30px -14px rgba(0,0,0,.7);text-align:center}
-.stack .sticker b{display:block;font-size:2.2rem;line-height:.9}
-.eco{margin-top:1rem;display:grid;grid-template-columns:auto minmax(0,1fr);gap:.9rem;align-items:start;padding:1rem 1.1rem;border-radius:18px;border:1px dashed rgba(43,168,100,.5);background:rgba(43,168,100,.07)}
-.eco svg{width:1.5rem;height:1.5rem;color:var(--g)}
-@media (max-width:900px){.about-grid{grid-template-columns:minmax(0,1fr)}.stack{max-width:560px;width:100%;margin-inline:auto}}
-
-/* tandem */
-.glow-r::before{content:"";position:absolute;right:-10%;top:5%;width:55vw;height:55vw;max-width:760px;max-height:760px;background:radial-gradient(closest-side,rgba(255,122,61,.18),transparent);pointer-events:none;z-index:0}
-.glow-l::before{content:"";position:absolute;left:-12%;top:20%;width:50vw;height:50vw;max-width:700px;max-height:700px;background:radial-gradient(closest-side,rgba(78,124,214,.22),transparent);pointer-events:none;z-index:0}
-.sec > .wrap{position:relative;z-index:1}
-.tandem-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
-.sticky{position:sticky;top:110px}
-.tag{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.85rem;color:var(--gold);background:rgba(255,198,90,.1);border:1px solid rgba(255,198,90,.25);padding:.45rem .8rem;border-radius:999px}
-.tag svg{width:1.05rem;height:1.05rem}
-.card{background:var(--glass);border:1px solid var(--line);border-radius:26px;padding:clamp(1.4rem,3vw,2.2rem);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);min-width:0}
-.card-title{font-family:var(--font-display);font-weight:700;font-variation-settings:"wdth" 90;font-size:1.4rem;line-height:1.2;margin-bottom:1.2rem}
-.checks{list-style:none;padding:0;margin:0;display:grid;gap:.7rem}
-.checks li{display:grid;grid-template-columns:1.4rem minmax(0,1fr);gap:.7rem;line-height:1.5}
-.checks svg{width:1.4rem;height:1.4rem;color:var(--g);margin-top:.08rem}
-.log{list-style:none;margin:0;padding:0;position:relative}
-.log::before{content:"";position:absolute;left:5.15rem;top:.9rem;bottom:.9rem;width:2px;background:linear-gradient(180deg,var(--gold),var(--ember) 60%,var(--flame));opacity:.75}
-.log li{display:grid;grid-template-columns:4.2rem 1.9rem minmax(0,1fr);gap:0 .5rem;padding-block:.75rem;align-items:start}
-.log time{font-family:var(--font-display);font-weight:700;font-variation-settings:"wdth" 82;font-size:1.3rem;font-variant-numeric:tabular-nums;line-height:1.35;color:var(--text)}
-.log .dot{width:14px;height:14px;border-radius:50%;background:var(--night);border:3px solid var(--ember);margin-top:.42rem;justify-self:center;position:relative;z-index:1}
-.log li.fly{background:linear-gradient(90deg,rgba(255,198,90,.12),rgba(255,198,90,0));border-radius:14px}
-.log li.fly .dot{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 6px rgba(255,198,90,.2)}
-.log li.fly time{color:var(--gold)}
-.log p{margin:0;line-height:1.5;color:var(--text)}
-.bring{margin-top:1.4rem;padding-top:1.3rem;border-top:1px dashed var(--line-2)}
-.who{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-top:clamp(2.5rem,5vw,4rem)}
-.who > div{padding:1.4rem 1.3rem;border-radius:22px;background:var(--night-2);border:1px solid var(--line);min-width:0}
-.who b{display:block;font-family:var(--font-display);font-weight:800;font-variation-settings:"wdth" 80;font-size:clamp(1.6rem,1.3rem + 1vw,2.1rem);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.who span{display:block;margin-top:.55rem;font-size:.92rem;line-height:1.45;color:var(--haze)}
-.medical{margin-top:1rem;font-size:.93rem;color:var(--haze);max-width:92ch}
-.weather{margin-top:clamp(2rem,4vw,3rem);border-radius:28px;padding:2px;background:var(--sunset)}
-.weather-in{border-radius:26px;background:var(--night);padding:clamp(1.4rem,3vw,2.2rem);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:2rem;align-items:start}
-.weather ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;counter-reset:w}
-.weather li{counter-increment:w;padding:1.1rem;border-radius:18px;background:var(--night-2);border:1px solid var(--line);line-height:1.45;min-width:0}
-.weather li::before{content:counter(w);display:grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:var(--sunset);color:var(--ink);font-weight:800;font-size:.95rem;margin-bottom:.75rem}
-@media (max-width:980px){.tandem-grid,.weather-in{grid-template-columns:minmax(0,1fr)}.sticky{position:static}.who{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:640px){.weather ol{grid-template-columns:minmax(0,1fr)}.who b{font-size:1.3rem}.who > div{padding:1.1rem 1rem}}
-
-/* 3D map */
-.map-sec{background:radial-gradient(80% 60% at 50% 30%,#14284C 0%,var(--night) 70%)}
-.map-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.5rem 4rem;align-items:end}
-.map-frame{position:relative;margin-top:clamp(2rem,4vw,3rem);border-radius:30px;overflow:hidden;border:1px solid var(--line);background:radial-gradient(70% 70% at 50% 35%,#1A3360 0%,#0F2142 55%,#0A1630 100%)}
-#map3d{display:block;width:100%;height:clamp(380px,56vw,640px);cursor:grab;touch-action:pan-y}
-#map3d:active{cursor:grabbing}
-.map-ui{position:absolute;left:1rem;right:1rem;bottom:1rem;display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;pointer-events:none}
-.legend{display:flex;flex-wrap:wrap;gap:.5rem;pointer-events:auto}
-.legend > span{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;font-weight:600;padding:.45rem .75rem;border-radius:999px;background:rgba(12,26,51,.78);border:1px solid var(--line);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
-.legend i{display:inline-block;width:22px;height:0;border-top:3px dashed var(--ember)}
-.legend i.road{border-top:3px dotted #fff}
-.map-btns{display:flex;gap:.5rem;pointer-events:auto}
-.map-btns button{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(12,26,51,.78);border:1px solid var(--line-2);color:var(--text);cursor:pointer;transition:background-color .2s}
-.map-btns button:hover{background:var(--dusk)}
-.map-btns svg{width:1.2rem;height:1.2rem}
-.map-hint{position:absolute;top:1rem;left:50%;transform:translateX(-50%);font-size:.82rem;font-weight:600;padding:.45rem .8rem;border-radius:999px;background:rgba(12,26,51,.7);border:1px solid var(--line);color:var(--haze);pointer-events:none;transition:opacity .4s;white-space:nowrap}
-.map-note{margin-top:.9rem;font-size:.85rem;color:var(--haze)}
-@media (max-width:900px){.map-head{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:640px){.map-ui{position:static;padding:.8rem;border-top:1px solid var(--line);background:rgba(12,26,51,.6)}.legend > span{font-size:.75rem;padding:.35rem .6rem}#map3d{height:420px}}
-
-/* school: the daylight band */
-.day{background:linear-gradient(180deg,var(--sky-1) 0%,#D8E7F7 30%,var(--sky-2) 100%);color:var(--ink)}
-.day .lead{color:var(--ink-2)}
-.day .tag{color:#9A4B12;background:rgba(255,122,61,.14);border-color:rgba(255,122,61,.35)}
-.ridge-top{position:absolute;left:0;right:0;top:-1px;width:100%;height:clamp(50px,7vw,100px);display:block;transform:scaleY(-1)}
-.ridge-top path{fill:var(--night)}
-.ridge-bot{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:clamp(50px,7vw,100px);display:block}
-.ridge-bot path{fill:var(--night)}
-.school-top{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(2rem,5vw,4rem);align-items:center}
-.school-photo{position:relative;margin:0;border-radius:30px;overflow:hidden;aspect-ratio:16/10;box-shadow:0 40px 70px -40px rgba(11,26,54,.6)}
-.school-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.school-photo figcaption{position:absolute;left:1rem;bottom:1rem;font-size:.82rem;font-weight:600;color:#fff;background:rgba(11,26,54,.6);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:.5rem .8rem;border-radius:12px}
-.school-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(1.25rem,3vw,2rem);margin-top:clamp(2.5rem,5vw,4rem);align-items:start}
-.steps{background:var(--y);color:var(--ink);border-radius:30px;padding:clamp(1.5rem,3.5vw,2.6rem);position:relative;overflow:hidden}
-.steps::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.22)}
-.steps ol{list-style:none;margin:0;padding:0;display:grid;gap:1.5rem;counter-reset:s;position:relative;z-index:1}
-.steps li{counter-increment:s;display:grid;grid-template-columns:3.4rem minmax(0,1fr);gap:1rem;align-items:start}
-.steps li::before{content:counter(s);font-family:var(--font-display);font-weight:800;font-variation-settings:"wdth" 75;font-size:3.4rem;line-height:.8}
-.steps strong{display:block;font-family:var(--font-display);font-weight:700;font-variation-settings:"wdth" 88;font-size:1.3rem;line-height:1.2;margin-bottom:.25rem}
-.steps p{margin:0;line-height:1.5}
-.steps .btn{margin-top:1.9rem;position:relative;z-index:1}
-.paper{background:#fff;color:var(--ink);border-radius:26px;padding:clamp(1.4rem,3vw,2rem);box-shadow:0 30px 60px -40px rgba(11,26,54,.45);border:1px solid rgba(11,26,54,.06)}
-.paper .card-title{color:var(--ink)}
-.paper .checks svg{color:#1E8A4B}
-.paper .checks li{color:var(--ink)}
-.paper + .paper{margin-top:1.25rem}
-@media (max-width:980px){.school-top,.school-grid{grid-template-columns:minmax(0,1fr)}}
-
-/* safety */
-.safety{background:var(--night);overflow:hidden;isolation:isolate}
-.safety-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.22;z-index:-1;-webkit-mask-image:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent);mask-image:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent)}
-.cadence{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:clamp(2.2rem,4vw,3.2rem)}
-.cadence > div{border-radius:26px;padding:1.6rem;background:var(--glass);border:1px solid var(--line);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);min-width:0;position:relative;overflow:hidden}
-.cadence > div::before{content:"";position:absolute;inset:0 0 auto;height:3px}
-.cadence > div.c1::before{background:var(--g)}
-.cadence > div.c2::before{background:var(--y)}
-.cadence > div.c3::before{background:var(--r)}
-.cadence ul{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.6rem}
-.cadence li{padding-left:1.2rem;position:relative;line-height:1.45}
-.cadence li::before{content:"";position:absolute;left:0;top:.6em;width:.5rem;height:.5rem;border-radius:50%;border:2px solid var(--gold)}
-.always{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.6rem;margin-top:2.4rem;padding-top:2rem;border-top:1px solid var(--line)}
-.always > div{min-width:0}
-.always strong{display:block;font-family:var(--font-display);font-weight:700;font-variation-settings:"wdth" 90;font-size:1.12rem;line-height:1.25;margin-bottom:.3rem}
-@media (max-width:980px){.cadence{grid-template-columns:minmax(0,1fr)}.always{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:520px){.always{grid-template-columns:minmax(0,1fr)}}
-
-/* gear */
-.gear-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-top:clamp(2.2rem,4vw,3.2rem)}
-.gear{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:.45rem;padding:1.5rem 1.35rem 1.4rem;border-radius:26px;background:var(--night-2);border:1px solid var(--line);transition:border-color .2s ease,background-color .2s ease,box-shadow .2s ease;position:relative;min-width:0}
-.gear:hover{border-color:var(--line-2);background:var(--dusk)}
-.gear:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.gear[aria-pressed="true"]{border-color:var(--gold);background:linear-gradient(180deg,rgba(255,198,90,.12),rgba(255,198,90,.02)),var(--night-2);box-shadow:0 0 0 1px var(--gold),0 24px 50px -30px rgba(255,198,90,.6)}
-.gear svg.art{width:100%;max-width:160px;height:auto;margin-bottom:.5rem}
-.gear .tick{position:absolute;top:1.1rem;right:1.1rem;width:1.8rem;height:1.8rem;border-radius:50%;border:1.5px solid var(--line-2);display:grid;place-items:center;color:transparent;transition:background-color .2s,color .2s,border-color .2s}
-.gear[aria-pressed="true"] .tick{background:var(--gold);border-color:var(--gold);color:var(--ink)}
-.gear .tick svg{width:1rem;height:1rem}
-.gear .d{color:var(--haze);font-size:.92rem;line-height:1.5}
-.quote-bar{margin-top:1.1rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;padding:.7rem .7rem .7rem 1.4rem;border-radius:999px;background:var(--night-2);border:1px solid var(--line)}
-.quote-bar p{margin:0;min-width:0}
-@media (max-width:1000px){.gear-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:760px){.quote-bar{border-radius:24px;padding:1rem}}
-@media (max-width:460px){.gear-grid{grid-template-columns:minmax(0,1fr)}}
-
-/* gallery bento */
-.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(150px,15vw,220px);grid-auto-flow:dense;gap:.8rem;margin-top:clamp(2.2rem,4vw,3.2rem)}
-.bento button{all:unset;box-sizing:border-box;position:relative;border-radius:22px;overflow:hidden;cursor:zoom-in;background:var(--dusk);min-width:0}
-.bento .g-wide{grid-column:span 2}
-.bento .g-tall{grid-row:span 2}
-.bento .g-big{grid-column:span 2;grid-row:span 2}
-.bento img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease),filter .3s}
-.bento button:hover img{transform:scale(1.045)}
-.bento button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.bento .cap{position:absolute;left:.7rem;bottom:.7rem;right:.7rem;font-size:.8rem;line-height:1.3;color:#fff;background:rgba(12,26,51,.66);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:.45rem .65rem;border-radius:10px;opacity:0;transform:translateY(6px);transition:opacity .25s,transform .25s}
-.bento button:hover .cap,.bento button:focus-visible .cap{opacity:1;transform:none}
-@media (max-width:760px){.bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px;gap:.55rem}.bento button{border-radius:16px}.bento .cap{display:none}}
-.social-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}
-.chip{display:inline-flex;align-items:center;gap:.55rem;min-height:44px;padding:.55rem 1.05rem;border-radius:999px;border:1px solid var(--line-2);background:rgba(255,255,255,.05);font-weight:600;font-size:.92rem;text-decoration:none;transition:border-color .2s,background-color .2s;cursor:pointer}
-.chip:hover{border-color:var(--gold);background:rgba(255,198,90,.08)}
-.chip svg{width:1.15rem;height:1.15rem}
-
-.lightbox{position:fixed;inset:0;z-index:60;background:rgba(5,11,24,.94);display:grid;grid-template-rows:auto minmax(0,1fr) auto;padding:calc(env(safe-area-inset-top,0px) + 12px) max(12px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 16px) max(12px,env(safe-area-inset-left,0px));color:#fff}
-.lightbox .top{display:flex;justify-content:flex-end}
-.lightbox .stage{display:grid;place-items:center;min-height:0}
-.lightbox img{max-width:100%;max-height:100%;object-fit:contain;border-radius:14px}
-.lightbox .bottom{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.8rem}
-.lightbox button{width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);color:#fff;display:grid;place-items:center;cursor:pointer;flex:none;transition:background-color .2s}
-.lightbox button:hover{background:rgba(255,255,255,.18)}
-.lightbox button svg{width:1.3rem;height:1.3rem}
-.lightbox p{margin:0;text-align:center;font-size:.95rem;flex:1}
-
-/* booking */
-.book{border-radius:34px;background:var(--sunset);color:var(--ink);padding:clamp(1.4rem,4vw,3.2rem);display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(1.5rem,4vw,3.5rem);position:relative;overflow:hidden;isolation:isolate}
-.book::before{content:"";position:absolute;right:-8%;top:-30%;width:60%;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.35),transparent);z-index:-1}
-.book h2{color:var(--ink)}
-.book .lead{color:#3A2416}
-.info{display:grid;margin-top:1.8rem}
-.info-row{display:grid;grid-template-columns:2.6rem minmax(0,1fr);gap:.9rem;padding-block:1rem;border-top:1px solid rgba(11,26,54,.18)}
-.info-row .ico{width:2.6rem;height:2.6rem;border-radius:14px;display:grid;place-items:center;background:rgba(11,26,54,.12);color:var(--ink)}
-.info-row .ico svg{width:1.25rem;height:1.25rem}
-.info-row strong{display:block;font-weight:700;line-height:1.35}
-.info-row p{margin:.15rem 0 0;line-height:1.5}
-.info-row .sub{font-size:.88rem;color:#3A2416}
-.info-row a.link{color:var(--ink);font-weight:700}
-.copy{all:unset;box-sizing:border-box;cursor:pointer;font-size:.8rem;font-weight:700;color:var(--ink);min-height:32px;padding:.3rem .7rem;border-radius:999px;border:1.5px solid rgba(11,26,54,.45);margin-left:.5rem;display:inline-flex;align-items:center;vertical-align:middle;transition:background-color .2s}
-.copy:hover{background:rgba(11,26,54,.1)}
-.copy:focus-visible{outline:3px solid var(--ink)}
-.book .chip{border-color:rgba(11,26,54,.35);background:rgba(255,255,255,.25);color:var(--ink)}
-.book .chip:hover{border-color:var(--ink);background:rgba(255,255,255,.4)}
-.form{background:var(--night);color:var(--text);border-radius:26px;padding:clamp(1.3rem,3vw,2.2rem);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto auto minmax(150px,1fr) auto;gap:1rem;box-shadow:0 40px 70px -40px rgba(11,26,54,.8)}
-.form .field.full{grid-template-rows:auto minmax(0,1fr)}
-.form .field.full textarea{height:100%}
-.form .card-title{grid-column:1/-1;margin-bottom:.2rem}
-.field{display:grid;gap:.4rem;min-width:0}
-.field.full{grid-column:1/-1}
-.field label{font-weight:600;font-size:.92rem}
-.field label em{font-style:normal;font-weight:500;color:var(--haze)}
-.field input,.field select,.field textarea{width:100%;min-height:48px;font:500 1rem/1.4 var(--font-body);color:var(--text);background:var(--night-2);border:1px solid var(--line-2);border-radius:14px;padding:.75rem .95rem;transition:border-color .2s,box-shadow .2s}
-.field textarea{min-height:110px;resize:vertical}
-.field input::placeholder,.field textarea::placeholder{color:#7F93B5}
-.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(255,198,90,.25)}
-.field input[aria-invalid="true"]{border-color:var(--flame)}
-.err{color:#FF8F87;font-size:.85rem;font-weight:600}
-.form-foot{grid-column:1/-1;display:grid;gap:.6rem;margin-top:.3rem}
-.form-foot .btn{width:100%}
-@media (max-width:980px){.book{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:520px){.form{grid-template-columns:minmax(0,1fr);grid-template-rows:none}}
-
-/* footer */
-.footer{background:#08132A;color:var(--text);position:relative}
-.footer::before{content:"";position:absolute;inset:0 0 auto;height:5px;background:var(--tricolor)}
-.foot-grid{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr));gap:2rem;padding-block:clamp(3.5rem,6vw,5rem) 2.5rem}
-.footer h4{font-family:var(--font-display);font-weight:700;font-variation-settings:"wdth" 90;font-size:1.05rem;margin-bottom:.8rem}
-.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.5rem}
-.footer a{text-decoration:none;color:var(--haze);transition:color .2s}
-.footer a:hover{color:var(--gold)}
-.foot-base{border-top:1px solid var(--line);padding-block:1.4rem calc(1.4rem + env(safe-area-inset-bottom,0px));display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between;font-size:.85rem;color:var(--haze)}
-@media (max-width:900px){.foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.foot-grid > div:first-child{grid-column:1/-1}}
-@media (max-width:480px){.foot-grid{grid-template-columns:minmax(0,1fr)}}
-
-.fab{position:fixed;z-index:40;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));display:inline-flex;align-items:center;gap:.55rem;min-height:56px;padding:0 1.25rem 0 1.05rem;border-radius:999px;background:var(--sunset);color:var(--ink);font-weight:700;text-decoration:none;box-shadow:0 18px 36px -12px rgba(0,0,0,.6);transition:opacity .3s ease,filter .2s ease,transform .3s ease}
-.fab svg{width:1.45rem;height:1.45rem}
-.fab:hover{filter:brightness(1.07)}
-.fab.hide{opacity:0;pointer-events:none;transform:translateY(14px)}
-@media (max-width:520px){.fab .t{display:none}.fab{padding:0;width:58px;justify-content:center}}
-
-/* scroll reveal: movement only, content stays visible */
-.rv{transform:translateY(28px);transition:transform .9s var(--ease)}
-.rv.in{transform:none}
-
-@media (prefers-reduced-motion: reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation:none!important;transition:none!important}
-  .rv{transform:none}
-}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<link rel="stylesheet" href="styles.css?v=20261101">
+<script defer src="main.js?v=20261101"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"TouristTrip","name":"Vuelo en parapente tándem desde el Cerro Niton","description":"Vuelo tándem de unos 15 minutos sobre los valles de Patate y Pelileo, con vista al volcán Tungurahua.","provider":{"@type":"LocalBusiness","name":"Flyniton Cía. Ltd.","telephone":"+593988030968","address":{"@type":"PostalAddress","streetAddress":"Pasaje Enrique Mideros y Calle Ambato","addressLocality":"Baños de Agua Santa","addressRegion":"Tungurahua","addressCountry":"EC"},"image":"https://otehy.github.io/img/hero.webp","url":"https://otehy.github.io/","sameAs":["https://www.instagram.com/parapente_flyniton_team_/","https://www.tiktok.com/@parapente_flyniton_team_"]}}
+</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="wing-clip" clipPathUnits="objectBoundingBox">
+      <polygon transform="scale(.0005 .00066667)" points="1060,398 1055,369 1056,357 1058,339 1063,321 1070,309 1083,297 1098,291 1125,285 1150,280 1175,285 1181,291 1187,303 1188,315 1186,327 1183,333 1179,339 1170,345 1158,339 1151,327 1147,321 1142,315 1136,309 1129,309 1125,315 1116,321 1113,327 1107,333 1104,339 1099,345 1095,351 1095,357 1090,363 1085,369 1083,375 1079,381 1076,387 1066,393"/>
+    </clipPath>
+  </defs>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+</svg>
 
+<a class="skip" href="#contenido"><span data-l="es">Saltar al contenido</span><span data-l="en">Skip to content</span></a>
 
-<div class="site">
-
-<!-- ============ NAV ============ -->
-<div class="nav-shell" id="nav-shell">
-  <div class="wrap">
-    <div class="nav-pill">
-      <a class="brand" href="#inicio" aria-label="Flyniton">
-        <img src="img/logo-white.png" width="635" height="214" alt="Flyniton Cía. Ltd. Operadora de Turismo">
-        <span class="bgd-badge"><span data-l="es">Distribuidor<br>oficial BGD</span><span data-l="en">Official BGD<br>dealer</span></span>
-      </a>
-      <nav class="nav" aria-label="Principal">
-        <a href="#nosotros"><span data-l="es">Nosotros</span><span data-l="en">About</span></a>
-        <a href="#vuelos"><span data-l="es">Vuelos</span><span data-l="en">Tandem</span></a>
-        <a href="#mapa"><span data-l="es">Mapa 3D</span><span data-l="en">3D map</span></a>
-        <a href="#escuela"><span data-l="es">Escuela</span><span data-l="en">School</span></a>
-        <a href="#equipos"><span data-l="es">Equipos BGD</span><span data-l="en">BGD gear</span></a>
-        <a href="#galeria"><span data-l="es">Galería</span><span data-l="en">Gallery</span></a>
-        <a href="#contacto"><span data-l="es">Contacto</span><span data-l="en">Contact</span></a>
-      </nav>
-      <div class="lang" role="group" aria-label="Idioma / Language">
-        <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
-        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
-      </div>
-      <a class="btn btn-sun btn-sm nav-cta" data-wa="tandem" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.2-4.1A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.2c.2-.5.6-.6 1-.5l.9 2c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l2 .9c.1.4 0 .8-.5 1-1 .6-2.4.6-3.9-.3a9.6 9.6 0 0 1-3.2-3.2C7.9 10.6 8.3 9 9 8.2z" fill="currentColor" stroke="none"/></svg><span data-l="es">Reservar</span><span data-l="en">Book</span></a>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menú">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
+<header class="top" id="top">
+  <a class="brand" id="brand" href="#inicio" aria-label="Flyniton, inicio">
+    <img src="img/logo-white.png" width="635" height="214" alt="Flyniton Cía. Ltd. Operadora de Turismo">
+  </a>
+  <nav class="nav" id="nav-main" aria-label="Principal">
+    <a href="#nosotros"><span data-l="es">Nosotros</span><span data-l="en">About</span></a>
+    <a href="#vuelos"><span data-l="es">Vuelos</span><span data-l="en">Flights</span></a>
+    <a href="#mapa"><span data-l="es">Mapa</span><span data-l="en">Map</span></a>
+    <a href="#escuela"><span data-l="es">Escuela</span><span data-l="en">School</span></a>
+    <a href="#seguridad"><span data-l="es">Seguridad</span><span data-l="en">Safety</span></a>
+    <a href="#equipos"><span data-l="es">Equipos</span><span data-l="en">Gear</span></a>
+    <a href="#galeria"><span data-l="es">Galería</span><span data-l="en">Gallery</span></a>
+  </nav>
+  <div class="top-end">
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
     </div>
+    <a class="btn btn-sun btn-sm top-book" href="#contacto"><span data-l="es">Reservar</span><span data-l="en">Book</span></a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile-nav">
+      <span data-l="es">Menú</span><span data-l="en">Menu</span>
+    </button>
   </div>
-  <nav class="mobile-nav" id="mobile-nav" hidden aria-label="Móvil">
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil" hidden>
     <a href="#nosotros"><span data-l="es">Nosotros</span><span data-l="en">About</span></a>
     <a href="#vuelos"><span data-l="es">Vuelos tándem</span><span data-l="en">Tandem flights</span></a>
-    <a href="#mapa"><span data-l="es">Mapa 3D de la zona</span><span data-l="en">3D map of the site</span></a>
+    <a href="#mapa"><span data-l="es">Mapa</span><span data-l="en">Map</span></a>
     <a href="#escuela"><span data-l="es">Escuela de parapente</span><span data-l="en">Paragliding school</span></a>
-    <a href="#equipos"><span data-l="es">Equipos BGD</span><span data-l="en">BGD gear</span></a>
+    <a href="#seguridad"><span data-l="es">Seguridad</span><span data-l="en">Safety</span></a>
+    <a href="#equipos"><span data-l="es">Equipos importados</span><span data-l="en">Imported gear</span></a>
     <a href="#galeria"><span data-l="es">Galería</span><span data-l="en">Gallery</span></a>
     <a href="#contacto"><span data-l="es">Contacto</span><span data-l="en">Contact</span></a>
-    <a class="btn btn-sun" data-wa="tandem" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.2-4.1A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.2c.2-.5.6-.6 1-.5l.9 2c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l2 .9c.1.4 0 .8-.5 1-1 .6-2.4.6-3.9-.3a9.6 9.6 0 0 1-3.2-3.2C7.9 10.6 8.3 9 9 8.2z" fill="currentColor" stroke="none"/></svg><span data-l="es">Reservar por WhatsApp</span><span data-l="en">Book on WhatsApp</span></a>
   </nav>
-</div>
+</header>
 
-<main>
-<!-- ============ HERO ============ -->
+<main id="contenido">
+
+<!-- PORTADA -->
 <section class="hero" id="inicio">
-  <img class="hero-bg" src="img/hero.webp" width="2000" height="1500" alt="Parapente tándem con vela verde, amarilla y roja volando frente al volcán Tungurahua" fetchpriority="high">
-  <div class="clouds" aria-hidden="true"></div>
-  <div class="badge" aria-hidden="true">
-    <svg class="ring" viewBox="0 0 150 150">
-      <defs><path id="circ" d="M75 75 m-60 0 a60 60 0 1 1 120 0 a60 60 0 1 1 -120 0"/></defs>
-      <text data-l="es"><textPath href="#circ">+25 AÑOS VOLANDO · CERRO NITON · 3.000 MSNM ·</textPath></text>
-      <text data-l="en"><textPath href="#circ">25+ YEARS FLYING · CERRO NITON · 3,000 M ·</textPath></text>
-    </svg>
-    <span class="core"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10q9-7 18 0"/><path d="M4 10l8 9 8-9M9 7.5l3 11.5M15 7.5l-3 11.5"/></svg></span>
-  </div>
-  <div class="wrap hero-inner">
-    <h1 class="display">
-      <span data-l="es"><span class="ln">Vuela sobre</span><span class="ln">el Tungurahua</span></span>
-      <span data-l="en"><span class="ln">Fly over</span><span class="ln">Tungurahua</span></span>
+  <div class="hero-stage">
+    <img class="hero-photo" src="img/hero.webp" width="2000" height="1500" alt="Parapente tándem con vela verde, amarilla y roja volando frente al volcán Tungurahua" fetchpriority="high">
+    <h1 class="hero-title">
+      <span data-l="es"><span class="ln">Vuela sobre</span> <span class="ln">el Tungurahua</span></span>
+      <span data-l="en"><span class="ln">Fly over</span> <span class="ln">Tungurahua</span></span>
     </h1>
-    <p class="hero-sub">
-      <span data-l="es">Despega desde nuestro campo en el Cerro Niton, a 3.000 metros, y vuela sobre los valles de Patate y Pelileo con el volcán de frente. Pilotos con más de 25 años en el aire de Tungurahua.</span>
-      <span data-l="en">Take off from our own field on Cerro Niton, 3,000 m above sea level, and fly over the Patate and Pelileo valleys facing the volcano. Pilots with more than 25 years in Tungurahua's air.</span>
-    </p>
-    <div class="hero-ctas">
-      <a class="btn btn-sun" data-wa="tandem" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.2-4.1A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.2c.2-.5.6-.6 1-.5l.9 2c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l2 .9c.1.4 0 .8-.5 1-1 .6-2.4.6-3.9-.3a9.6 9.6 0 0 1-3.2-3.2C7.9 10.6 8.3 9 9 8.2z" fill="currentColor" stroke="none"/></svg><span data-l="es">Reservar vuelo tándem</span><span data-l="en">Book a tandem flight</span></a>
-      <a class="btn btn-ghost" href="#escuela"><span data-l="es">Aprender a volar</span><span data-l="en">Learn to fly</span></a>
-    </div>
-    <div class="readouts" role="list">
-      <div class="readout" role="listitem"><b data-l="es">+25<small>años</small></b><b data-l="en">25+<small>years</small></b><span data-l="es">volando en Tungurahua</span><span data-l="en">flying in Tungurahua</span></div>
-      <div class="readout" role="listitem"><b data-l="es">3.000<small>msnm</small></b><b data-l="en">3,000<small>m</small></b><span data-l="es">despegue en el Cerro Niton</span><span data-l="en">takeoff altitude at Cerro Niton</span></div>
-      <div class="readout" role="listitem"><b>≈15<small>min</small></b><span data-l="es">en el aire con tu piloto</span><span data-l="en">in the air with your pilot</span></div>
-      <div class="readout" role="listitem"><b data-l="es">7.000<small>m²</small></b><b data-l="en">7,000<small>m²</small></b><span data-l="es">de campo propio para despegar y aterrizar</span><span data-l="en">of our own field to take off and land</span></div>
-    </div>
+    <img class="hero-wing" src="img/hero.webp" width="2000" height="1500" alt="" aria-hidden="true">
   </div>
-  <svg class="ridge" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true"><path d="M0 130 L0 96 C120 90 240 80 360 84 C470 88 560 78 640 66 L742 18 Q760 10 778 18 L880 66 C960 80 1060 92 1180 88 C1290 84 1370 90 1440 86 L1440 130 Z"/></svg>
-</section>
-
-<!-- ============ MARQUEE ============ -->
-<div class="marquee" aria-hidden="true">
-  <div class="track">
-    <span class="item">Baños de Agua Santa <i></i> Cerro Niton <em>3.000 m</em> <i></i> <span data-l="es">Valle de Patate</span><span data-l="en">Patate valley</span> <i></i> Pelileo <i></i> <span data-l="es">Volcán Tungurahua</span><span data-l="en">Tungurahua volcano</span> <i></i> <span data-l="es">Vuelo tándem</span><span data-l="en">Tandem flight</span> <i></i> <span data-l="es">Escuela de parapente</span><span data-l="en">Paragliding school</span> <i></i></span>
-    <span class="item">Baños de Agua Santa <i></i> Cerro Niton <em>3.000 m</em> <i></i> <span data-l="es">Valle de Patate</span><span data-l="en">Patate valley</span> <i></i> Pelileo <i></i> <span data-l="es">Volcán Tungurahua</span><span data-l="en">Tungurahua volcano</span> <i></i> <span data-l="es">Vuelo tándem</span><span data-l="en">Tandem flight</span> <i></i> <span data-l="es">Escuela de parapente</span><span data-l="en">Paragliding school</span> <i></i></span>
-  </div>
-</div>
-
-<!-- ============ NOSOTROS ============ -->
-<section class="sec about glow-l" id="nosotros">
-  <div class="wrap about-grid">
-    <div data-reveal>
-      <span class="tag"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10" r="2.4"/></svg><span data-l="es">Baños de Agua Santa · Pelileo</span><span data-l="en">Baños de Agua Santa · Pelileo</span></span>
-      <h2 class="display h2" style="margin-top:1.1rem">
-        <span data-l="es">Más de 25 años volando en Tungurahua</span>
-        <span data-l="en">More than 25 years flying in Tungurahua</span>
-      </h2>
-      <p class="lead" style="margin-top:1.4rem;color:var(--text)">
-        <span data-l="es">Flyniton es una operadora de turismo de aventura y escuela de parapente con oficina en Baños de Agua Santa. Volamos desde el Cerro Niton, en Pelileo, donde tenemos un campo de césped natural propio para despegar y aterrizar en el mismo lugar.</span>
-        <span data-l="en">Flyniton is an adventure tour operator and paragliding school with an office in Baños de Agua Santa. We fly from Cerro Niton in Pelileo, where we own a natural grass field to take off and land in the same place.</span>
-      </p>
-      <p class="haze" style="margin-top:1rem;max-width:58ch">
-        <span data-l="es">Nuestros pilotos e instructores conocen el aire del Niton: leen el viento, deciden cuándo se vuela y cuándo no, y te acompañan desde la charla de seguridad hasta que tus pies vuelven a tocar el césped.</span>
-        <span data-l="en">Our pilots and instructors know the air over Niton: they read the wind, decide when it is safe to fly and when it is not, and stay with you from the safety briefing until your feet touch the grass again.</span>
-      </p>
-      <ul class="facts">
-        <li><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18c3-5 6-7.5 9-7.5s6 2.5 9 7.5"/><path d="M7 6.5q5-3.5 10 0"/><path d="M8 6.8l4 5M16 6.8l-4 5"/></svg></span><div><strong data-l="es">Campo propio de 7.000 m²</strong><strong data-l="en">Our own 7,000 m² field</strong><span class="haze" data-l="es">Despegue y aterrizaje en el mismo lugar, con el desnivel ideal.</span><span class="haze" data-l="en">Takeoff and landing in the same place, on an ideal slope.</span></div></li>
-        <li><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.4-3 8-7 9.5-4-1.5-7-5.1-7-9.5V6z"/><path d="M9 12l2 2 4-4"/></svg></span><div><strong data-l="es">Equipos homologados EN / DHV</strong><strong data-l="en">EN / DHV certified gear</strong><span class="haze" data-l="es">Revisados antes de cada jornada y en taller certificado cada año.</span><span class="haze" data-l="en">Checked before every flying day and by a certified workshop every year.</span></div></li>
-        <li><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9q8-6 16 0"/><path d="M5 9l7 7 7-7"/><circle cx="12" cy="18.5" r="2"/></svg></span><div><strong data-l="es">Pilotos certificados</strong><strong data-l="en">Certified pilots</strong><span class="haze" data-l="es">Un pasajero por piloto en cada vuelo, con radio al equipo en tierra.</span><span class="haze" data-l="en">One passenger per pilot on every flight, with a radio link to the ground crew.</span></div></li>
-      </ul>
-      <div class="eco">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14z"/><path d="M5 19l7-7"/></svg>
-        <p class="small" style="margin:0">
-          <span data-l="es"><strong>Cuidamos el Niton.</strong> <span class="haze">No usamos agroquímicos en el campo, recogemos los residuos de cada grupo, limitamos los vehículos que suben y no levantamos construcciones que cambien el paisaje.</span></span>
-          <span data-l="en"><strong>We look after Niton.</strong> <span class="haze">No agrochemicals on the field, we pick up every group's waste, we limit the vehicles that drive up and we build nothing that changes the landscape.</span></span>
-        </p>
+  <div class="hero-foot">
+    <div class="hero-pitch">
+      <p><span data-l="es">Despega desde nuestro campo en el Cerro Niton, a 3.000 metros, y vuela sobre los valles de Patate y Pelileo con el volcán de frente. Pilotos con más de 25 años en el aire de Tungurahua.</span><span data-l="en">Take off from our own field on Cerro Niton, 3,000 m above sea level, and fly over the Patate and Pelileo valleys facing the volcano. Pilots with more than 25 years in Tungurahua's air.</span></p>
+      <div class="actions">
+        <a class="btn btn-sun" data-wa="tandem" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-l="es">Reservar vuelo tándem</span><span data-l="en">Book a tandem flight</span></a>
+        <a class="btn btn-line" href="#escuela"><span data-l="es">Aprender a volar</span><span data-l="en">Learn to fly</span></a>
       </div>
     </div>
-    <div class="stack" data-reveal data-tilt>
-      <figure class="s1">
-        <img src="img/office.webp" width="900" height="1080" alt="Turistas frente a la oficina de Flyniton en Baños de Agua Santa" loading="lazy">
-        <figcaption><span data-l="es">Nuestra oficina en Baños: Pasaje Enrique Mideros y Calle Ambato</span><span data-l="en">Our office in Baños: Pasaje Enrique Mideros y Calle Ambato</span></figcaption>
-      </figure>
-      <figure class="s2">
+    <dl class="facts">
+      <div><dt><span data-l="es">+25 años</span><span data-l="en">25+ years</span></dt><dd><span data-l="es">volando en Tungurahua</span><span data-l="en">flying in Tungurahua</span></dd></div>
+      <div><dt><span data-l="es">3.000 msnm</span><span data-l="en">3,000 m</span></dt><dd><span data-l="es">despegue en el Cerro Niton</span><span data-l="en">takeoff altitude at Cerro Niton</span></dd></div>
+      <div><dt>≈15 min</dt><dd><span data-l="es">en el aire con tu piloto</span><span data-l="en">in the air with your pilot</span></dd></div>
+      <div><dt>7.000 m²</dt><dd><span data-l="es">de campo propio para despegar y aterrizar</span><span data-l="en">of our own field to take off and land</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section class="sec about" id="nosotros">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <h2 class="h2"><span data-l="es">Más de 25 años volando en Tungurahua</span><span data-l="en">More than 25 years flying in Tungurahua</span></h2>
+      <p class="lead"><span data-l="es">Flyniton es una operadora de turismo de aventura y escuela de parapente con oficina en Baños de Agua Santa. Volamos desde el Cerro Niton, en Pelileo, donde tenemos un campo de césped natural propio para despegar y aterrizar en el mismo lugar.</span><span data-l="en">Flyniton is an adventure tour operator and paragliding school with an office in Baños de Agua Santa. We fly from Cerro Niton in Pelileo, where we own a natural grass field to take off and land in the same place.</span></p>
+      <p><span data-l="es">Nuestros pilotos e instructores conocen el aire del Niton: leen el viento, deciden cuándo se vuela y cuándo no, y te acompañan desde la charla de seguridad hasta que tus pies vuelven a tocar el césped.</span><span data-l="en">Our pilots and instructors know the air over Niton: they read the wind, decide when it is safe to fly and when it is not, and stay with you from the safety briefing until your feet touch the grass again.</span></p>
+      <ul class="rows">
+        <li><h3><span data-l="es">Campo propio de 7.000 m²</span><span data-l="en">Our own 7,000 m² field</span></h3><p><span data-l="es">Despegue y aterrizaje en el mismo lugar, con el desnivel ideal.</span><span data-l="en">Takeoff and landing in the same place, on an ideal slope.</span></p></li>
+        <li><h3><span data-l="es">Equipos homologados EN / DHV</span><span data-l="en">EN / DHV certified gear</span></h3><p><span data-l="es">Revisados antes de cada jornada y en taller certificado cada año.</span><span data-l="en">Checked before every flying day and by a certified workshop every year.</span></p></li>
+        <li><h3><span data-l="es">Pilotos certificados</span><span data-l="en">Certified pilots</span></h3><p><span data-l="es">Un pasajero por piloto en cada vuelo, con radio al equipo en tierra.</span><span data-l="en">One passenger per pilot on every flight, with a radio link to the ground crew.</span></p></li>
+      </ul>
+      <p class="care"><strong><span data-l="es">Cuidamos el Niton.</span><span data-l="en">We look after Niton.</span></strong> <span data-l="es">No usamos agroquímicos en el campo, recogemos los residuos de cada grupo, limitamos los vehículos que suben y no levantamos construcciones que cambien el paisaje.</span><span data-l="en">No agrochemicals on the field, we pick up every group's waste, we limit the vehicles that drive up and we build nothing that changes the landscape.</span></p>
+    </div>
+    <div class="about-photos">
+      <figure class="ph-main">
         <img src="img/landing.webp" width="1000" height="1333" alt="Pasajera sonriente aterrizando en tándem con su piloto" loading="lazy">
         <figcaption><span data-l="es">Aterrizaje tándem en nuestro campo del Niton</span><span data-l="en">Tandem landing on our Niton field</span></figcaption>
       </figure>
-      <div class="sticker"><b data-l="es">+25</b><b data-l="en">25+</b><span data-l="es">años en<br>el aire</span><span data-l="en">years in<br>the air</span></div>
+      <figure class="ph-side">
+        <img src="img/office.webp" width="900" height="1080" alt="Turistas frente a la oficina de Flyniton en Baños de Agua Santa" loading="lazy">
+        <figcaption><span data-l="es">Nuestra oficina en Baños: Pasaje Enrique Mideros y Calle Ambato</span><span data-l="en">Our office in Baños: Pasaje Enrique Mideros y Calle Ambato</span></figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<!-- ============ VUELOS TANDEM ============ -->
-<section class="sec glow-r" id="vuelos" style="background:linear-gradient(180deg,var(--night) 0%,#0E1E3B 100%)">
+<!-- VUELOS -->
+<section class="sec flights" id="vuelos">
+  <div class="wrap flights-head">
+    <div>
+      <h2 class="h2"><span data-l="es">Tu tarde en el Cerro Niton</span><span data-l="en">Your afternoon on Cerro Niton</span></h2>
+      <p class="lead"><span data-l="es">Vuelas sentado delante de un piloto certificado que controla el parapente todo el tiempo. No necesitas experiencia: escuchas la charla, das unos pasos en el césped y el viento hace el resto.</span><span data-l="en">You fly seated in front of a certified pilot who controls the wing the whole time. No experience needed: listen to the briefing, take a few steps on the grass and the wind does the rest.</span></p>
+      <a class="btn btn-ink" data-wa="tandem" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-l="es">Consultar tarifa y cupo</span><span data-l="en">Check price and availability</span></a>
+    </div>
+    <div class="flights-side">
+      <h3 class="h3"><span data-l="es">Qué incluye</span><span data-l="en">What's included</span></h3>
+      <ul class="ticks">
+        <li><span data-l="es">Recogida y retorno a tu hotel o agencia en Baños</span><span data-l="en">Pickup and drop-off at your hotel or agency in Baños</span></li>
+        <li><span data-l="es">Charla técnica con video y práctica en simulador</span><span data-l="en">Safety briefing with video and simulator practice</span></li>
+        <li><span data-l="es">Transporte turístico Baños – Cerro Niton – Baños</span><span data-l="en">Tourist transport Baños – Cerro Niton – Baños</span></li>
+        <li><span data-l="es">Vuelo de unos 15 minutos con piloto certificado</span><span data-l="en">A flight of about 15 minutes with a certified pilot</span></li>
+        <li><span data-l="es">Casco, arnés y parapente homologados</span><span data-l="en">Certified helmet, harness and wing</span></li>
+        <li><span data-l="es">Soportes para grabar con tu celular, cámara o GoPro</span><span data-l="en">Mounts to film with your phone, camera or GoPro</span></li>
+      </ul>
+      <h3 class="h3 mt"><span data-l="es">Qué llevar</span><span data-l="en">What to bring</span></h3>
+      <p><span data-l="es">Ropa abrigada y zapatos deportivos o de media montaña. No sandalias ni tacones: en el despegue das unos pasos corriendo sobre el césped.</span><span data-l="en">Warm clothes and sports or hiking shoes. No sandals or heels: you take a few running steps on the grass at takeoff.</span></p>
+    </div>
+  </div>
+
+  <div class="wrap"><h3 class="h3 tl-title"><span data-l="es">Itinerario desde Baños de Agua Santa</span><span data-l="en">Itinerary from Baños de Agua Santa</span></h3></div>
+  <ol class="timeline">
+    <li><time>14:30</time><p><span data-l="es">Te recogemos en tu hotel, agencia u operadora en Baños.</span><span data-l="en">We pick you up at your hotel, agency or tour operator in Baños.</span></p></li>
+    <li><time>14:40</time><p><span data-l="es">Charla técnica y de seguridad en nuestra oficina, con video y práctica en simulador de despegue y aterrizaje.</span><span data-l="en">Technical and safety briefing at our office, with a video and takeoff and landing practice on a simulator.</span></p></li>
+    <li><time>14:50</time><p><span data-l="es">Salida en transporte turístico hacia el Cerro Niton, en Pelileo.</span><span data-l="en">Departure by tourist transport to Cerro Niton, in Pelileo.</span></p></li>
+    <li><time>15:30</time><p><span data-l="es">Llegada a la zona de vuelo, bienvenida y análisis del viento y las condiciones del día.</span><span data-l="en">Arrival at the flying site, welcome and a check of the wind and the day's conditions.</span></p></li>
+    <li class="tl-fly"><time>15:30</time><p><strong><span data-l="es">Vuelos hasta las 18:30.</span><span data-l="en">Flights until 18:30.</span></strong> <span data-l="es">Cada vuelo dura unos 15 minutos sobre los valles de Patate y Pelileo, con vista al Tungurahua.</span><span data-l="en">Each flight lasts about 15 minutes over the Patate and Pelileo valleys, facing Tungurahua.</span></p></li>
+    <li><time>18:30</time><p><span data-l="es">Hora máxima de retorno hacia Baños.</span><span data-l="en">Latest departure back to Baños.</span></p></li>
+    <li><time>19:15</time><p><span data-l="es">Llegada a Baños y entrega en tu hotel, agencia u operadora.</span><span data-l="en">Arrival in Baños and drop-off at your hotel, agency or tour operator.</span></p></li>
+  </ol>
+
   <div class="wrap">
-    <div class="tandem-grid">
-      <div class="sticky" data-reveal>
-        <span class="tag"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10q9-7 18 0"/><path d="M4 10l8 9 8-9M9 7.5l3 11.5M15 7.5l-3 11.5"/></svg><span data-l="es">Vuelo biplaza</span><span data-l="en">Tandem flight</span></span>
-        <h2 class="display h2" style="margin-top:1.1rem;max-width:12ch"><span data-l="es">Tu tarde en el Cerro Niton</span><span data-l="en">Your afternoon on Cerro Niton</span></h2>
-        <p class="lead" style="margin-top:1.3rem">
-          <span data-l="es">Vuelas sentado delante de un piloto certificado que controla el parapente todo el tiempo. No necesitas experiencia: escuchas la charla, das unos pasos en el césped y el viento hace el resto.</span>
-          <span data-l="en">You fly seated in front of a certified pilot who controls the wing the whole time. No experience needed: listen to the briefing, take a few steps on the grass and the wind does the rest.</span>
-        </p>
-        <div class="card" style="margin-top:1.8rem">
-          <h3 class="card-title"><span data-l="es">Qué incluye</span><span data-l="en">What's included</span></h3>
-          <ul class="checks">
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16.2 9.4"/></svg><span><span data-l="es">Recogida y retorno a tu hotel o agencia en Baños</span><span data-l="en">Pickup and drop-off at your hotel or agency in Baños</span></span></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16.2 9.4"/></svg><span><span data-l="es">Charla técnica con video y práctica en simulador</span><span data-l="en">Safety briefing with video and simulator practice</span></span></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16.2 9.4"/></svg><span><span data-l="es">Transporte turístico Baños – Cerro Niton – Baños</span><span data-l="en">Tourist transport Baños – Cerro Niton – Baños</span></span></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16.2 9.4"/></svg><span><span data-l="es">Vuelo de unos 15 minutos con piloto certificado</span><span data-l="en">A flight of about 15 minutes with a certified pilot</span></span></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16.2 9.4"/></svg><span><span data-l="es">Casco, arnés y parapente homologados</span><span data-l="en">Certified helmet, harness and wing</span></span></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16.2 9.4"/></svg><span><span data-l="es">Soportes para grabar con tu celular, cámara o GoPro</span><span data-l="en">Mounts to film with your phone, camera or GoPro</span></span></li>
-          </ul>
-          <div class="bring">
-            <strong data-l="es">Qué llevar</strong><strong data-l="en">What to bring</strong>
-            <p class="haze" style="margin:.35rem 0 0"><span data-l="es">Ropa abrigada y zapatos deportivos o de media montaña. No sandalias ni tacones: en el despegue das unos pasos corriendo sobre el césped.</span><span data-l="en">Warm clothes and sports or hiking shoes. No sandals or heels: you take a few running steps on the grass at takeoff.</span></p>
-          </div>
-          <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.8rem;align-items:center">
-            <a class="btn btn-sun" data-wa="tandem" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.2-4.1A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.2c.2-.5.6-.6 1-.5l.9 2c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l2 .9c.1.4 0 .8-.5 1-1 .6-2.4.6-3.9-.3a9.6 9.6 0 0 1-3.2-3.2C7.9 10.6 8.3 9 9 8.2z" fill="currentColor" stroke="none"/></svg><span data-l="es">Consultar tarifa y cupo</span><span data-l="en">Check price and availability</span></a>
-          </div>
-        </div>
-      </div>
+    <dl class="reqs">
+      <div><dt><span data-l="es">Desde 8 años</span><span data-l="en">From age 8</span></dt><dd><span data-l="es">Menores con autorización escrita de su representante legal.</span><span data-l="en">Minors need written permission from a parent or legal guardian.</span></dd></div>
+      <div><dt>40–100 kg</dt><dd><span data-l="es">Peso del pasajero, por el límite técnico del equipo biplaza.</span><span data-l="en">Passenger weight, the technical limit of the tandem gear.</span></dd></div>
+      <div><dt><span data-l="es">Hasta 70 años</span><span data-l="en">Up to age 70</span></dt><dd><span data-l="es">Edad recomendada, según tu condición física.</span><span data-l="en">Recommended age, depending on your fitness.</span></dd></div>
+      <div><dt><span data-l="es">Sin experiencia</span><span data-l="en">No experience</span></dt><dd><span data-l="es">Solo debes poder caminar y mantenerte de pie en el despegue.</span><span data-l="en">You only need to walk and stand during takeoff.</span></dd></div>
+    </dl>
+    <p class="fine"><span data-l="es">Por seguridad no pueden volar personas con epilepsia no controlada, problemas cardíacos graves, fracturas recientes, embarazo o condiciones que impidan usar el arnés. Si tienes dudas, te pediremos un certificado médico. No se vuela bajo efectos del alcohol.</span><span data-l="en">For safety, people with uncontrolled epilepsy, serious heart conditions, recent fractures, pregnancy or any condition that prevents wearing the harness cannot fly. If in doubt we will ask for a medical certificate. No flying under the influence of alcohol.</span></p>
 
-      <div class="card" data-reveal>
-        <h3 class="card-title"><span data-l="es">Itinerario desde Baños de Agua Santa</span><span data-l="en">Itinerary from Baños de Agua Santa</span></h3>
-        <ol class="log">
-          <li><time>14:30</time><span class="dot"></span><p><span data-l="es">Te recogemos en tu hotel, agencia u operadora en Baños.</span><span data-l="en">We pick you up at your hotel, agency or tour operator in Baños.</span></p></li>
-          <li><time>14:40</time><span class="dot"></span><p><span data-l="es">Charla técnica y de seguridad en nuestra oficina, con video y práctica en simulador de despegue y aterrizaje.</span><span data-l="en">Technical and safety briefing at our office, with a video and takeoff and landing practice on a simulator.</span></p></li>
-          <li><time>14:50</time><span class="dot"></span><p><span data-l="es">Salida en transporte turístico hacia el Cerro Niton, en Pelileo.</span><span data-l="en">Departure by tourist transport to Cerro Niton, in Pelileo.</span></p></li>
-          <li><time>15:30</time><span class="dot"></span><p><span data-l="es">Llegada a la zona de vuelo, bienvenida y análisis del viento y las condiciones del día.</span><span data-l="en">Arrival at the flying site, welcome and a check of the wind and the day's conditions.</span></p></li>
-          <li class="fly"><time>15:30</time><span class="dot"></span><p><span data-l="es"><strong>Vuelos hasta las 18:30.</strong> Cada vuelo dura unos 15 minutos sobre los valles de Patate y Pelileo, con vista al Tungurahua.</span><span data-l="en"><strong>Flights until 18:30.</strong> Each flight lasts about 15 minutes over the Patate and Pelileo valleys, facing Tungurahua.</span></p></li>
-          <li><time>18:30</time><span class="dot"></span><p><span data-l="es">Hora máxima de retorno hacia Baños.</span><span data-l="en">Latest departure back to Baños.</span></p></li>
-          <li><time>19:15</time><span class="dot"></span><p><span data-l="es">Llegada a Baños y entrega en tu hotel, agencia u operadora.</span><span data-l="en">Arrival in Baños and drop-off at your hotel, agency or tour operator.</span></p></li>
-        </ol>
-      </div>
-    </div>
-
-    <div data-reveal>
-      <div class="who">
-        <div><b data-l="es">Desde 8 años</b><b data-l="en">From age 8</b><span data-l="es">Menores con autorización escrita de su representante legal.</span><span data-l="en">Minors need written permission from a parent or legal guardian.</span></div>
-        <div><b>40–100 kg</b><span data-l="es">Peso del pasajero, por el límite técnico del equipo biplaza.</span><span data-l="en">Passenger weight, the technical limit of the tandem gear.</span></div>
-        <div><b data-l="es">Hasta 70 años</b><b data-l="en">Up to age 70</b><span data-l="es">Edad recomendada, según tu condición física.</span><span data-l="en">Recommended age, depending on your fitness.</span></div>
-        <div><b data-l="es">Sin experiencia</b><b data-l="en">No experience</b><span data-l="es">Solo debes poder caminar y mantenerte de pie en el despegue.</span><span data-l="en">You only need to walk and stand during takeoff.</span></div>
-      </div>
-      <p class="medical"><span data-l="es">Por seguridad no pueden volar personas con epilepsia no controlada, problemas cardíacos graves, fracturas recientes, embarazo o condiciones que impidan usar el arnés. Si tienes dudas, te pediremos un certificado médico. No se vuela bajo efectos del alcohol.</span><span data-l="en">For safety, people with uncontrolled epilepsy, serious heart conditions, recent fractures, pregnancy or any condition that prevents wearing the harness cannot fly. If in doubt we will ask for a medical certificate. No flying under the influence of alcohol.</span></p>
-    </div>
-
-    <div class="weather" data-reveal>
-      <div class="weather-in">
-        <div>
-          <h3 class="h3" style="font-size:1.6rem"><span data-l="es">¿Y si el clima no acompaña?</span><span data-l="en">What if the weather doesn't cooperate?</span></h3>
-          <p class="haze" style="margin:.8rem 0 0"><span data-l="es">Volamos con días claros o parcialmente nublados y viento del sureste entre 15 y 30 km/h. Con lluvia, despegue cerrado por nubes, viento fuerte o cumulonimbos, no se vuela.</span><span data-l="en">We fly on clear or partly cloudy days with south-east wind between 15 and 30 km/h. With rain, cloud on the takeoff, strong wind or cumulonimbus, we don't fly.</span></p>
-        </div>
-        <ol>
+    <div class="wx-block" id="clima">
+      <div class="wx-policy">
+        <h3 class="h3 big"><span data-l="es">¿Y si el clima no acompaña?</span><span data-l="en">What if the weather doesn't cooperate?</span></h3>
+        <p><span data-l="es">Volamos con días claros o parcialmente nublados y viento del sureste entre 15 y 30 km/h. Con lluvia, despegue cerrado por nubes, viento fuerte o cumulonimbos, no se vuela.</span><span data-l="en">We fly on clear or partly cloudy days with south-east wind between 15 and 30 km/h. With rain, cloud on the takeoff, strong wind or cumulonimbus, we don't fly.</span></p>
+        <ol class="steps-plain">
           <li><span data-l="es">Esperamos una ventana de buen tiempo el mismo día.</span><span data-l="en">We wait for a weather window the same day.</span></li>
           <li><span data-l="es">Si no mejora, reprogramamos tu vuelo sin costo.</span><span data-l="en">If it doesn't clear, we reschedule at no cost.</span></li>
           <li><span data-l="es">Si no puedes otro día, te devolvemos el valor completo.</span><span data-l="en">If you can't make another day, you get a full refund.</span></li>
         </ol>
       </div>
+      <div class="wx" id="wx">
+        <div class="wx-head">
+          <h3 class="h3"><span data-l="es">Pronóstico en el Niton, 15:00 a 18:00</span><span data-l="en">Niton forecast, 15:00 to 18:00</span></h3>
+          <div class="wx-days" id="wx-days" role="group" aria-label="Día / Day"></div>
+        </div>
+        <ul class="wx-hours" id="wx-hours"><li class="wx-msg"><span data-l="es">Cargando el pronóstico…</span><span data-l="en">Loading the forecast…</span></li></ul>
+        <p class="wx-note"><span data-l="es">Orientativo: es un modelo meteorológico, no una medición en el campo. El piloto decide si se vuela. Datos de</span><span data-l="en">For guidance only: this is a weather model, not a reading from the field. The pilot decides whether we fly. Data from</span> <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ MAPA 3D ============ -->
-<section class="sec map-sec" id="mapa">
-  <div class="wrap">
-    <div class="map-head" data-reveal>
+<!-- MAPA -->
+<section class="mapsec" id="mapa">
+  <div class="map-panel">
+    <h2 class="h2"><span data-l="es">Mira dónde vas a volar</span><span data-l="en">See where you'll fly</span></h2>
+    <p><span data-l="es">Desde Baños, a 1.820 m, subimos unos 25 km hasta el Cerro Niton, a 3.000 m. Despegas sobre los valles de Patate y Pelileo, con el Tungurahua de frente, y aterrizas en el mismo campo.</span><span data-l="en">From Baños at 1,820 m we drive about 25 km up to Cerro Niton at 3,000 m. You launch over the Patate and Pelileo valleys, facing Tungurahua, and land on the same field.</span></p>
+    <div class="places" id="places" role="group" aria-label="Lugares / Places">
+      <button type="button" data-place="niton" aria-pressed="true"><b><span data-l="es">Despegue, Cerro Niton</span><span data-l="en">Takeoff, Cerro Niton</span></b><small><span data-l="es">3.000 m, la vista hacia el volcán</span><span data-l="en">3,000 m, the view toward the volcano</span></small></button>
+      <button type="button" data-place="volcan" aria-pressed="false"><b><span data-l="es">Volcán Tungurahua</span><span data-l="en">Tungurahua volcano</span></b><small><span data-l="es">Lo que tienes de frente al volar</span><span data-l="en">What you face in the air</span></small></button>
+      <button type="button" data-place="banos" aria-pressed="false"><b><span data-l="es">Baños de Agua Santa</span><span data-l="en">Baños de Agua Santa</span></b><small><span data-l="es">1.820 m, nuestra oficina y punto de salida</span><span data-l="en">1,820 m, our office and meeting point</span></small></button>
+      <button type="button" data-place="todo" aria-pressed="false"><b><span data-l="es">Toda la ruta</span><span data-l="en">The whole route</span></b><small><span data-l="es">De Baños al campo de vuelo</span><span data-l="en">From Baños to the flying site</span></small></button>
+    </div>
+    <ul class="legend">
+      <li><i class="lg-fly"></i><span data-l="es">Zona de vuelo aproximada</span><span data-l="en">Approximate flying area</span></li>
+      <li><i class="lg-road"></i><span data-l="es">Ruta por carretera, unos 40 min</span><span data-l="en">Road route, about 40 min</span></li>
+    </ul>
+    <div class="map-links">
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=-1.286111%2C-78.543889" target="_blank" rel="noopener"><span data-l="es">Cómo llegar al Niton</span><span data-l="en">Directions to Niton</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Pasaje%20Enrique%20Mideros%20y%20Calle%20Ambato%2C%20Ba%C3%B1os%20de%20Agua%20Santa%2C%20Ecuador" target="_blank" rel="noopener"><span data-l="es">Cómo llegar a la oficina</span><span data-l="en">Directions to the office</span></a>
+    </div>
+  </div>
+  <div class="map-stage">
+    <div id="map" class="map" role="region" aria-label="Mapa satelital en 3D del Cerro Niton, Baños y el volcán Tungurahua"></div>
+    <div class="map-layers" id="map-layers" role="group" aria-label="Tipo de mapa / Map type" hidden>
+      <button type="button" data-layer="sat" aria-pressed="true"><span data-l="es">Satélite</span><span data-l="en">Satellite</span></button>
+      <button type="button" data-layer="osm" aria-pressed="false"><span data-l="es">Calles</span><span data-l="en">Streets</span></button>
+    </div>
+    <div class="map-fallback" id="map-fallback" hidden>
+      <img src="img/volcano.webp" width="1300" height="1225" alt="" loading="lazy">
+      <p><span data-l="es">No se pudo cargar el mapa en este dispositivo. Usa los enlaces de «Cómo llegar».</span><span data-l="en">The map couldn't load on this device. Use the directions links instead.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ESCUELA -->
+<section class="sec school" id="escuela">
+  <div class="wrap school-head">
+    <h2 class="h2"><span data-l="es">Aprende a volar tu propio parapente</span><span data-l="en">Learn to fly your own paraglider</span></h2>
+    <p class="lead"><span data-l="es">Curso teórico y práctico a la vez: entiendes la teoría y la llevas al campo en la misma jornada, con el equipo de la escuela y un instructor a tu lado.</span><span data-l="en">Theory and practice side by side: you learn the theory and take it to the field the same day, with school gear and an instructor beside you.</span></p>
+  </div>
+  <figure class="school-photo">
+    <img src="img/ground.webp" width="1800" height="875" alt="Alumnos practicando el inflado de sus parapentes en el campo" loading="lazy">
+    <figcaption class="wrap"><span data-l="es">Práctica de inflado en el campo de la escuela</span><span data-l="en">Ground-handling practice on the school field</span></figcaption>
+  </figure>
+  <div class="wrap school-body">
+    <div>
+      <h3 class="h3 big"><span data-l="es">Cómo inscribirte</span><span data-l="en">How to enrol</span></h3>
+      <ol class="steps">
+        <li><h4><span data-l="es">Escríbenos</span><span data-l="en">Message us</span></h4><p><span data-l="es">Te contamos las próximas fechas, el valor del curso y el número estimado de sesiones.</span><span data-l="en">We'll tell you the next dates, the course price and the estimated number of sessions.</span></p></li>
+        <li><h4><span data-l="es">Ficha y contrato</span><span data-l="en">Form and contract</span></h4><p><span data-l="es">En nuestra oficina de Baños llenas la ficha de inscripción y firmas el contrato del curso. Los menores de edad firman junto a su padre, madre o representante.</span><span data-l="en">At our Baños office you fill in the enrolment form and sign the course contract. Minors sign together with a parent or guardian.</span></p></li>
+        <li><h4><span data-l="es">A entrenar</span><span data-l="en">Start training</span></h4><p><span data-l="es">Teoría y práctica en paralelo, desde el manejo de la vela en tierra hasta tus primeros vuelos.</span><span data-l="en">Theory and practice in parallel, from handling the wing on the ground to your first flights.</span></p></li>
+      </ol>
+      <a class="btn btn-sun" data-wa="school" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-l="es">Quiero inscribirme</span><span data-l="en">I want to enrol</span></a>
+    </div>
+    <div class="school-lists">
       <div>
-        <span class="tag"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20l7-12 4 6 3-4 6 10z"/><path d="M7.4 10.8l1.6 1.4 1.6-1.6"/></svg><span data-l="es">Mapa 3D</span><span data-l="en">3D map</span></span>
-        <h2 class="display h2" style="margin-top:1.1rem;max-width:12ch"><span data-l="es">Mira dónde vas a volar</span><span data-l="en">See where you'll fly</span></h2>
-      </div>
-      <p class="lead"><span data-l="es">Desde Baños, a 1.820 m, subimos unos 25 km hasta el Cerro Niton, a 3.000 m. Despegas sobre los valles de Patate y Pelileo, con el Tungurahua de frente, y aterrizas en el mismo campo.</span><span data-l="en">From Baños at 1,820 m we drive about 25 km up to Cerro Niton at 3,000 m. You launch over the Patate and Pelileo valleys, facing Tungurahua, and land on the same field.</span></p>
-    </div>
-    <div class="map-frame" data-reveal>
-      <canvas id="map3d" tabindex="0" role="img" aria-label="Mapa 3D ilustrativo: Cerro Niton a 3.000 metros, Pelileo, el valle de Patate, Baños de Agua Santa a 1.820 metros y el volcán Tungurahua. Arrastra o usa las flechas para girarlo."></canvas>
-      <div class="map-hint" id="map-hint"><span data-l="es">Arrastra para girar</span><span data-l="en">Drag to rotate</span></div>
-      <div class="map-ui">
-        <div class="legend">
-          <span><i></i><span data-l="es">Vuelo ≈15 min</span><span data-l="en">≈15 min flight</span></span>
-          <span><i class="road"></i><span data-l="es">Ruta desde Baños · 40 min</span><span data-l="en">Road from Baños · 40 min</span></span>
-        </div>
-        <div class="map-btns">
-          <button type="button" id="map-left" aria-label="Girar a la izquierda"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-          <button type="button" id="map-play" aria-label="Pausar giro" aria-pressed="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><rect x="6.5" y="5" width="4" height="14" rx="1"/><rect x="13.5" y="5" width="4" height="14" rx="1"/></svg></button>
-          <button type="button" id="map-right" aria-label="Girar a la derecha"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
-        </div>
-      </div>
-    </div>
-    <p class="map-note"><span data-l="es">Mapa ilustrativo: posiciones aproximadas y relieve exagerado para que se aprecie mejor.</span><span data-l="en">Illustrative map: approximate positions and exaggerated relief so it reads better.</span></p>
-  </div>
-</section>
-
-<!-- ============ ESCUELA (day band) ============ -->
-<section class="sec day" id="escuela">
-  <svg class="ridge-top" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100 L0 70 C160 62 300 72 420 64 C520 58 600 40 680 30 C760 22 820 40 900 52 C1040 70 1200 60 1440 66 L1440 100 Z"/></svg>
-  <div class="wrap">
-    <div class="school-top">
-      <div data-reveal>
-        <span class="tag"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6"/></svg><span data-l="es">Escuela de parapente</span><span data-l="en">Paragliding school</span></span>
-        <h2 class="display h2" style="margin-top:1.1rem;max-width:12ch"><span data-l="es">Aprende a volar tu propio parapente</span><span data-l="en">Learn to fly your own paraglider</span></h2>
-        <p class="lead" style="margin-top:1.3rem"><span data-l="es">Curso teórico y práctico a la vez: entiendes la teoría y la llevas al campo en la misma jornada, con el equipo de la escuela y un instructor a tu lado.</span><span data-l="en">Theory and practice side by side: you learn the theory and take it to the field the same day, with school gear and an instructor beside you.</span></p>
-      </div>
-      <figure class="school-photo" data-reveal>
-        <img src="img/ground.webp" width="1800" height="875" alt="Alumnos practicando el inflado de sus parapentes en el campo" loading="lazy">
-        <figcaption><span data-l="es">Práctica de inflado en el campo de la escuela</span><span data-l="en">Ground-handling practice on the school field</span></figcaption>
-      </figure>
-    </div>
-
-    <div class="school-grid">
-      <div class="steps" data-reveal>
-        <h3 class="card-title" style="font-size:1.6rem"><span data-l="es">Cómo inscribirte</span><span data-l="en">How to enrol</span></h3>
-        <ol>
-          <li><div><strong data-l="es">Escríbenos</strong><strong data-l="en">Message us</strong><p data-l="es">Te contamos las próximas fechas, el valor del curso y el número estimado de sesiones.</p><p data-l="en">We'll tell you the next dates, the course price and the estimated number of sessions.</p></div></li>
-          <li><div><strong data-l="es">Ficha y contrato</strong><strong data-l="en">Form and contract</strong><p data-l="es">En nuestra oficina de Baños llenas la ficha de inscripción y firmas el contrato del curso. Los menores de edad firman junto a su padre, madre o representante.</p><p data-l="en">At our Baños office you fill in the enrolment form and sign the course contract. Minors sign together with a parent or guardian.</p></div></li>
-          <li><div><strong data-l="es">A entrenar</strong><strong data-l="en">Start training</strong><p data-l="es">Teoría y práctica en paralelo, desde el manejo de la vela en tierra hasta tus primeros vuelos.</p><p data-l="en">Theory and practice in parallel, from handling the wing on the ground to your first flights.</p></div></li>
-        </ol>
-        <a class="btn btn-ink" data-wa="school" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.2-4.1A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.2c.2-.5.6-.6 1-.5l.9 2c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l2 .9c.1.4 0 .8-.5 1-1 .6-2.4.6-3.9-.3a9.6 9.6 0 0 1-3.2-3.2C7.9 10.6 8.3 9 9 8.2z" fill="currentColor" stroke="none"/></svg><span data-l="es">Quiero inscribirme</span><span data-l="en">I want to enrol</span></a>
+        <h3 class="h3"><span data-l="es">La escuela pone</span><span data-l="en">The school provides</span></h3>
+        <ul class="ticks">
+          <li><span data-l="es">Instrucción teórica y práctica simultánea</span><span data-l="en">Theory and practical instruction at the same time</span></li>
+          <li><span data-l="es">Parapente, arnés, casco y radio para las prácticas</span><span data-l="en">Wing, harness, helmet and radio for practice</span></li>
+          <li><span data-l="es">Calidad garantizada de instrucción y equipos</span><span data-l="en">Guaranteed quality of instruction and gear</span></li>
+        </ul>
       </div>
       <div>
-        <div class="paper" data-reveal>
-          <h3 class="card-title"><span data-l="es">La escuela pone</span><span data-l="en">The school provides</span></h3>
-          <ul class="checks">
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16.2 9.4"/></svg><span><span data-l="es">Instrucción teórica y práctica simultánea</span><span data-l="en">Theory and practical instruction at the same time</span></span></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16.2 9.4"/></svg><span><span data-l="es">Parapente, arnés, casco y radio para las prácticas</span><span data-l="en">Wing, harness, helmet and radio for practice</span></span></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16.2 9.4"/></svg><span><span data-l="es">Calidad garantizada de instrucción y equipos</span><span data-l="en">Guaranteed quality of instruction and gear</span></span></li>
-          </ul>
-        </div>
-        <div class="paper" data-reveal>
-          <h3 class="card-title"><span data-l="es">Lo que te pedimos</span><span data-l="en">What we ask of you</span></h3>
-          <ul class="checks">
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg><span><span data-l="es">Cédula o pasaporte, fecha de nacimiento, peso, estatura, tipo de sangre y datos de contacto</span><span data-l="en">ID or passport, date of birth, weight, height, blood type and contact details</span></span></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg><span><span data-l="es">Llegar a cada sesión sin alcohol ni drogas</span><span data-l="en">Come to every session free of alcohol and drugs</span></span></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg><span><span data-l="es">Cuidar el equipo que te prestamos: daños o pérdidas corren por tu cuenta</span><span data-l="en">Look after the gear we lend you: damage or loss is your responsibility</span></span></li>
-          </ul>
-        </div>
+        <h3 class="h3"><span data-l="es">Lo que te pedimos</span><span data-l="en">What we ask of you</span></h3>
+        <ul class="ticks">
+          <li><span data-l="es">Cédula o pasaporte, fecha de nacimiento, peso, estatura, tipo de sangre y datos de contacto</span><span data-l="en">ID or passport, date of birth, weight, height, blood type and contact details</span></li>
+          <li><span data-l="es">Llegar a cada sesión sin alcohol ni drogas</span><span data-l="en">Come to every session free of alcohol and drugs</span></li>
+          <li><span data-l="es">Cuidar el equipo que te prestamos: daños o pérdidas corren por tu cuenta</span><span data-l="en">Look after the gear we lend you: damage or loss is your responsibility</span></li>
+        </ul>
       </div>
     </div>
   </div>
-  <svg class="ridge-bot" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100 L0 58 C140 66 260 52 380 56 C470 60 540 74 620 70 L700 40 Q716 34 732 40 L820 72 C960 82 1120 64 1260 70 C1340 74 1400 70 1440 68 L1440 100 Z"/></svg>
 </section>
 
-<!-- ============ SEGURIDAD ============ -->
+<!-- SEGURIDAD -->
 <section class="sec safety" id="seguridad">
-  <img class="safety-bg" src="img/bluehour.webp" width="1440" height="813" alt="" loading="lazy">
   <div class="wrap">
-    <div data-reveal>
-      <span class="tag"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.4-3 8-7 9.5-4-1.5-7-5.1-7-9.5V6z"/><path d="M9 12l2 2 4-4"/></svg><span data-l="es">Seguridad</span><span data-l="en">Safety</span></span>
-      <h2 class="display h2" style="margin-top:1.1rem;max-width:14ch"><span data-l="es">Revisamos todo antes de despegar</span><span data-l="en">We check everything before takeoff</span></h2>
-      <p class="lead" style="margin-top:1.2rem"><span data-l="es">Nuestro plan de operación fija qué se revisa y cada cuánto. El piloto tiene la última palabra: si el aire no es seguro, no se vuela.</span><span data-l="en">Our operating plan sets what gets checked and how often. The pilot has the final word: if the air isn't safe, we don't fly.</span></p>
+    <div class="safety-head">
+      <h2 class="h2"><span data-l="es">Revisamos todo antes de despegar</span><span data-l="en">We check everything before takeoff</span></h2>
+      <p class="lead"><span data-l="es">Nuestro plan de operación fija qué se revisa y cada cuánto. El piloto tiene la última palabra: si el aire no es seguro, no se vuela.</span><span data-l="en">Our operating plan sets what gets checked and how often. The pilot has the final word: if the air isn't safe, we don't fly.</span></p>
     </div>
-    <div class="cadence">
-      <div class="c1" data-reveal>
-        <h3 class="h3"><span data-l="es">Cada jornada</span><span data-l="en">Every flying day</span></h3>
+    <div class="log">
+      <div>
+        <h3><span data-l="es">Cada jornada</span><span data-l="en">Every flying day</span></h3>
         <ul>
           <li><span data-l="es">Tela, líneas, maillones y mosquetones</span><span data-l="en">Fabric, lines, maillons and carabiners</span></li>
           <li><span data-l="es">Arneses de piloto y pasajero, hebillas y cascos</span><span data-l="en">Pilot and passenger harnesses, buckles and helmets</span></li>
@@ -693,8 +281,8 @@ a{color:inherit}
           <li><span data-l="es">Zona de despegue y aterrizaje</span><span data-l="en">Takeoff and landing area</span></li>
         </ul>
       </div>
-      <div class="c2" data-reveal>
-        <h3 class="h3"><span data-l="es">Cada mes</span><span data-l="en">Every month</span></h3>
+      <div>
+        <h3><span data-l="es">Cada mes</span><span data-l="en">Every month</span></h3>
         <ul>
           <li><span data-l="es">Costuras y revestimiento del parapente</span><span data-l="en">Wing seams and cloth</span></li>
           <li><span data-l="es">Desgaste y simetría de las líneas</span><span data-l="en">Line wear and symmetry</span></li>
@@ -702,8 +290,8 @@ a{color:inherit}
           <li><span data-l="es">Paracaídas de emergencia y registro de horas de vuelo</span><span data-l="en">Reserve parachutes and flight-hour log</span></li>
         </ul>
       </div>
-      <div class="c3" data-reveal>
-        <h3 class="h3"><span data-l="es">Cada año</span><span data-l="en">Every year</span></h3>
+      <div>
+        <h3><span data-l="es">Cada año</span><span data-l="en">Every year</span></h3>
         <ul>
           <li><span data-l="es">Porometría de la vela en taller certificado</span><span data-l="en">Wing porosity test at a certified workshop</span></li>
           <li><span data-l="es">Revisión técnica de arneses en taller autorizado</span><span data-l="en">Harness inspection at an authorised workshop</span></li>
@@ -711,699 +299,152 @@ a{color:inherit}
         </ul>
       </div>
     </div>
-    <div class="always" data-reveal>
-      <div><strong data-l="es">Paracaídas de emergencia</strong><strong data-l="en">Reserve parachute</strong><span class="haze small" data-l="es">Uno por piloto, revisado al menos cada 6 meses.</span><span class="haze small" data-l="en">One per pilot, repacked at least every 6 months.</span></div>
-      <div><strong data-l="es">Radio con tierra</strong><strong data-l="en">Radio to the ground</strong><span class="haze small" data-l="es">El piloto se comunica con el equipo en tierra durante todo el vuelo.</span><span class="haze small" data-l="en">The pilot stays in contact with the ground crew for the whole flight.</span></div>
-      <div><strong data-l="es">Doble chequeo del arnés</strong><strong data-l="en">Harness double-check</strong><span class="haze small" data-l="es">El ajuste se verifica antes de caminar al despegue.</span><span class="haze small" data-l="en">The fit is checked before walking to takeoff.</span></div>
-      <div><strong data-l="es">Botiquín en el campo</strong><strong data-l="en">First-aid kit on site</strong><span class="haze small" data-l="es">En la zona de despegue y aterrizaje, con protocolo ECU 911.</span><span class="haze small" data-l="en">At the takeoff and landing area, with an ECU 911 emergency protocol.</span></div>
+    <dl class="reqs safety-items">
+      <div><dt><span data-l="es">Paracaídas de emergencia</span><span data-l="en">Reserve parachute</span></dt><dd><span data-l="es">Uno por piloto, revisado al menos cada 6 meses.</span><span data-l="en">One per pilot, repacked at least every 6 months.</span></dd></div>
+      <div><dt><span data-l="es">Radio con tierra</span><span data-l="en">Radio to the ground</span></dt><dd><span data-l="es">El piloto se comunica con el equipo en tierra durante todo el vuelo.</span><span data-l="en">The pilot stays in contact with the ground crew for the whole flight.</span></dd></div>
+      <div><dt><span data-l="es">Doble chequeo del arnés</span><span data-l="en">Harness double-check</span></dt><dd><span data-l="es">El ajuste se verifica antes de caminar al despegue.</span><span data-l="en">The fit is checked before walking to takeoff.</span></dd></div>
+      <div><dt><span data-l="es">Botiquín en el campo</span><span data-l="en">First-aid kit on site</span></dt><dd><span data-l="es">En la zona de despegue y aterrizaje, con protocolo ECU 911.</span><span data-l="en">At the takeoff and landing area, with an ECU 911 emergency protocol.</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- EQUIPOS -->
+<section class="sec gearsec" id="equipos">
+  <div class="wrap gear-grid">
+    <div>
+      <h2 class="h2"><span data-l="es">Equipos importados BGD, con asesoría de pilotos</span><span data-l="en">Imported BGD gear, chosen with pilots</span></h2>
+      <p class="lead"><span data-l="es">Somos importadores oficiales de BGD (Bruce Goldsmith Design). Marca lo que te interesa y te enviamos cotización y catálogo según tu nivel, tu peso y el tipo de vuelo que haces.</span><span data-l="en">We are official importers of BGD (Bruce Goldsmith Design). Pick what you're interested in and we'll send you a quote and catalogue for your level, your weight and the kind of flying you do.</span></p>
+    </div>
+    <div>
+      <div class="gear-list">
+        <button type="button" class="gear" aria-pressed="false" data-gear-es="Parapentes" data-gear-en="Paragliders"><i></i><b><span data-l="es">Parapentes</span><span data-l="en">Paragliders</span></b><span class="d"><span data-l="es">Velas de escuela, progresión y biplaza.</span><span data-l="en">School, progression and tandem wings.</span></span></button>
+        <button type="button" class="gear" aria-pressed="false" data-gear-es="Arneses" data-gear-en="Harnesses"><i></i><b><span data-l="es">Arneses</span><span data-l="en">Harnesses</span></b><span class="d"><span data-l="es">Sillas para escuela, cross y biplaza.</span><span data-l="en">Harnesses for school, cross-country and tandem.</span></span></button>
+        <button type="button" class="gear" aria-pressed="false" data-gear-es="Paracaídas de emergencia" data-gear-en="Reserve parachutes"><i></i><b><span data-l="es">Paracaídas de emergencia</span><span data-l="en">Reserve parachutes</span></b><span class="d"><span data-l="es">Reservas para vuelo solo y biplaza.</span><span data-l="en">Reserves for solo and tandem flying.</span></span></button>
+        <button type="button" class="gear" aria-pressed="false" data-gear-es="Accesorios" data-gear-en="Accessories"><i></i><b><span data-l="es">Accesorios</span><span data-l="en">Accessories</span></b><span class="d"><span data-l="es">Cascos, radios, instrumentos y más.</span><span data-l="en">Helmets, radios, instruments and more.</span></span></button>
+      </div>
+      <div class="quote">
+        <p id="gear-summary"><span data-l="es">Marca uno o más equipos para armar tu cotización.</span><span data-l="en">Select one or more items to build your quote.</span></p>
+        <a class="btn btn-ink" id="gear-send" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-l="es">Pedir cotización y catálogo</span><span data-l="en">Request quote and catalogue</span></a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ EQUIPOS BGD ============ -->
-<section class="sec glow-r" id="equipos">
-  <div class="wrap">
-    <div data-reveal>
-      <span class="tag"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.4-3 8-7 9.5-4-1.5-7-5.1-7-9.5V6z"/><path d="M9 12l2 2 4-4"/></svg><span data-l="es">Distribuidores oficiales</span><span data-l="en">Official dealers</span></span>
-      <h2 class="display h2" style="margin-top:1.1rem;max-width:14ch"><span data-l="es">Equipos BGD con asesoría de pilotos</span><span data-l="en">BGD gear, chosen with pilots</span></h2>
-      <p class="lead" style="margin-top:1.2rem"><span data-l="es">Somos distribuidores de BGD (Bruce Goldsmith Design) en Tungurahua. Marca lo que te interesa y te enviamos cotización y catálogo según tu nivel, tu peso y el tipo de vuelo que haces.</span><span data-l="en">We are BGD (Bruce Goldsmith Design) dealers in Tungurahua. Pick what you're interested in and we'll send you a quote and catalogue for your level, your weight and the kind of flying you do.</span></p>
-    </div>
-    <div class="gear-grid" data-reveal>
-      <button type="button" class="gear" aria-pressed="false" data-gear-es="Parapentes" data-gear-en="Paragliders">
-        <span class="tick"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"><path d="M5 12.5l4.2 4.2L19 7"/></svg></span>
-        <svg class="art" viewBox="0 0 150 100" aria-hidden="true">
-          <defs><linearGradient id="gw1" x1="0" x2="1"><stop offset="0" stop-color="#2BA864"/><stop offset=".333" stop-color="#2BA864"/><stop offset=".333" stop-color="#F7C21B"/><stop offset=".5" stop-color="#F7C21B"/><stop offset=".5" stop-color="#E53935"/><stop offset="1" stop-color="#E53935"/></linearGradient></defs>
-          <path d="M14 40 Q75 -6 136 40 Q75 18 14 40Z" fill="url(#gw1)"/>
-          <g stroke="#A9BCD8" stroke-width="1"><line x1="16" y1="40" x2="75" y2="86"/><line x1="45" y1="27" x2="75" y2="86"/><line x1="105" y1="27" x2="75" y2="86"/><line x1="134" y1="40" x2="75" y2="86"/></g>
-          <circle cx="75" cy="89" r="5" fill="#F1F5FB"/>
-        </svg>
-        <span class="h3"><span data-l="es">Parapentes</span><span data-l="en">Paragliders</span></span>
-        <span class="d"><span data-l="es">Velas de escuela, progresión y biplaza.</span><span data-l="en">School, progression and tandem wings.</span></span>
-      </button>
-      <button type="button" class="gear" aria-pressed="false" data-gear-es="Arneses" data-gear-en="Harnesses">
-        <span class="tick"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"><path d="M5 12.5l4.2 4.2L19 7"/></svg></span>
-        <svg class="art" viewBox="0 0 150 100" aria-hidden="true">
-          <path d="M40 30 Q75 18 110 30 L116 62 Q118 80 96 84 L54 84 Q32 80 34 62Z" fill="#4E7CD6"/>
-          <path d="M52 30 L60 10 M98 30 L90 10" stroke="#F1F5FB" stroke-width="4" stroke-linecap="round"/>
-          <rect x="50" y="48" width="50" height="9" rx="4.5" fill="#FF8A3D"/>
-          <path d="M60 84 Q75 96 90 84" fill="none" stroke="#F1F5FB" stroke-width="3"/>
-        </svg>
-        <span class="h3"><span data-l="es">Arneses</span><span data-l="en">Harnesses</span></span>
-        <span class="d"><span data-l="es">Sillas para escuela, cross y biplaza.</span><span data-l="en">Harnesses for school, cross-country and tandem.</span></span>
-      </button>
-      <button type="button" class="gear" aria-pressed="false" data-gear-es="Paracaídas de emergencia" data-gear-en="Reserve parachutes">
-        <span class="tick"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"><path d="M5 12.5l4.2 4.2L19 7"/></svg></span>
-        <svg class="art" viewBox="0 0 150 100" aria-hidden="true">
-          <path d="M30 48 Q30 10 75 10 Q120 10 120 48 Q108 42 97 48 Q86 42 75 48 Q64 42 53 48 Q42 42 30 48Z" fill="#FF8A3D"/>
-          <path d="M75 10 L75 48" stroke="#0C1A33" stroke-width="2"/>
-          <g stroke="#A9BCD8" stroke-width="1"><line x1="31" y1="48" x2="75" y2="88"/><line x1="53" y1="48" x2="75" y2="88"/><line x1="97" y1="48" x2="75" y2="88"/><line x1="119" y1="48" x2="75" y2="88"/></g>
-          <circle cx="75" cy="90" r="5" fill="#F1F5FB"/>
-        </svg>
-        <span class="h3"><span data-l="es">Paracaídas de emergencia</span><span data-l="en">Reserve parachutes</span></span>
-        <span class="d"><span data-l="es">Reservas para vuelo solo y biplaza.</span><span data-l="en">Reserves for solo and tandem flying.</span></span>
-      </button>
-      <button type="button" class="gear" aria-pressed="false" data-gear-es="Accesorios" data-gear-en="Accessories">
-        <span class="tick"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"><path d="M5 12.5l4.2 4.2L19 7"/></svg></span>
-        <svg class="art" viewBox="0 0 150 100" aria-hidden="true">
-          <path d="M32 66 Q30 26 66 24 Q100 24 102 60 L102 70 Q80 64 32 70Z" fill="#F7C21B"/>
-          <path d="M40 58 Q62 52 96 56" fill="none" stroke="#0C1A33" stroke-width="3" stroke-linecap="round"/>
-          <rect x="108" y="34" width="22" height="42" rx="5" fill="#4E7CD6"/>
-          <rect x="113" y="40" width="12" height="10" rx="2" fill="#F1F5FB"/>
-          <line x1="114" y1="34" x2="114" y2="20" stroke="#F1F5FB" stroke-width="3" stroke-linecap="round"/>
-        </svg>
-        <span class="h3"><span data-l="es">Accesorios</span><span data-l="en">Accessories</span></span>
-        <span class="d"><span data-l="es">Cascos, radios, instrumentos y más.</span><span data-l="en">Helmets, radios, instruments and more.</span></span>
-      </button>
-    </div>
-    <div class="quote-bar">
-      <p id="gear-summary" class="small"><span data-l="es">Marca uno o más equipos para armar tu cotización.</span><span data-l="en">Select one or more items to build your quote.</span></p>
-      <a class="btn btn-sun" id="gear-send" data-wa="gear" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.2-4.1A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.2c.2-.5.6-.6 1-.5l.9 2c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l2 .9c.1.4 0 .8-.5 1-1 .6-2.4.6-3.9-.3a9.6 9.6 0 0 1-3.2-3.2C7.9 10.6 8.3 9 9 8.2z" fill="currentColor" stroke="none"/></svg><span data-l="es">Pedir cotización y catálogo</span><span data-l="en">Request quote and catalogue</span></a>
-    </div>
+<!-- GALERÍA -->
+<section class="sec gallery-sec" id="galeria">
+  <div class="wrap gallery-head">
+    <h2 class="h2"><span data-l="es">Así se ve desde el Niton</span><span data-l="en">The view from Niton</span></h2>
+    <p><span data-l="es">Fotos de nuestros vuelos y alumnos. Hay más videos en</span><span data-l="en">Photos from our flights and students. More videos on</span> <a href="https://www.instagram.com/parapente_flyniton_team_/" target="_blank" rel="noopener">Instagram</a> <span data-l="es">y</span><span data-l="en">and</span> <a href="https://www.tiktok.com/@parapente_flyniton_team_" target="_blank" rel="noopener">TikTok</a>.</p>
+  </div>
+  <div class="gallery" id="gallery">
+    <button type="button" class="g1" data-cap-es="Saltos de alegría en el Niton con el Tungurahua despejado" data-cap-en="Jumping for joy at Niton with a clear view of Tungurahua"><img src="img/jumpclear.webp" width="1400" height="1050" alt="Saltos de alegría en el Niton con el Tungurahua despejado" loading="lazy"></button>
+    <button type="button" class="g2" data-cap-es="Despegue tándem bajo el arcoíris" data-cap-en="Tandem takeoff under a rainbow"><img src="img/tricolor.webp" width="1000" height="1333" alt="Despegue tándem bajo el arcoíris" loading="lazy"></button>
+    <button type="button" class="g3" data-cap-es="Volando frente al Tungurahua" data-cap-en="Flying in front of Tungurahua"><img src="img/volcano.webp" width="1300" height="1225" alt="Volando frente al Tungurahua" loading="lazy"></button>
+    <button type="button" class="g4" data-cap-es="Cada vuelo deja fotos para recordar" data-cap-en="Every flight leaves photos to remember"><img src="img/photographer.webp" width="1400" height="1050" alt="Cada vuelo deja fotos para recordar" loading="lazy"></button>
+    <button type="button" class="g5" data-cap-es="Hora azul sobre el valle, con el volcán al fondo" data-cap-en="Blue hour over the valley, with the volcano behind"><img src="img/bluehour.webp" width="1440" height="813" alt="Hora azul sobre el valle, con el volcán al fondo" loading="lazy"></button>
+    <button type="button" class="g6" data-cap-es="Atardecer en el Cerro Niton" data-cap-en="Sunset at Cerro Niton"><img src="img/sunset.webp" width="1440" height="810" alt="Atardecer en el Cerro Niton" loading="lazy"></button>
+    <button type="button" class="g7" data-cap-es="Toda la familia en el campo de vuelo" data-cap-en="The whole family at the flying site"><img src="img/family.webp" width="1000" height="1333" alt="Toda la familia en el campo de vuelo" loading="lazy"></button>
+    <button type="button" class="g8" data-cap-es="Inflando la vela con luz de atardecer" data-cap-en="Inflating the wing in the late-afternoon light"><img src="img/rainbow.webp" width="1800" height="1350" alt="Inflando la vela con luz de atardecer" loading="lazy"></button>
+    <button type="button" class="g9" data-cap-es="Aterrizaje tándem con sonrisa incluida" data-cap-en="A tandem landing, smile included"><img src="img/landing.webp" width="1000" height="1333" alt="Aterrizaje tándem con sonrisa incluida" loading="lazy"></button>
+    <button type="button" class="g10" data-cap-es="Grupo en el Niton entre las nubes" data-cap-en="A group at Niton among the clouds"><img src="img/jumpcloud.webp" width="1400" height="1050" alt="Grupo en el Niton entre las nubes" loading="lazy"></button>
+    <button type="button" class="g11" data-cap-es="Navidad con la comunidad en el Niton" data-cap-en="Christmas with the community at Niton"><img src="img/community.webp" width="1600" height="778" alt="Navidad con la comunidad en el Niton" loading="lazy"></button>
+    <button type="button" class="g12" data-cap-es="Despegue hacia el valle de Pelileo" data-cap-en="Launching toward the Pelileo valley"><img src="img/launch.webp" width="1600" height="900" alt="Despegue hacia el valle de Pelileo" loading="lazy"></button>
   </div>
 </section>
 
-<!-- ============ GALERIA ============ -->
-<section class="sec" id="galeria" style="background:linear-gradient(180deg,var(--night) 0%,#0E1E3B 50%,var(--night) 100%)">
-  <div class="wrap">
-    <div data-reveal style="display:flex;flex-wrap:wrap;gap:1.5rem 3rem;align-items:end;justify-content:space-between">
-      <div>
-        <h2 class="display h2" style="max-width:12ch"><span data-l="es">Así se ve desde el Niton</span><span data-l="en">The view from Niton</span></h2>
-        <p class="lead" style="margin-top:1.1rem"><span data-l="es">Fotos de nuestros vuelos y alumnos. Hay más videos en Instagram y TikTok.</span><span data-l="en">Photos from our flights and students. More videos on Instagram and TikTok.</span></p>
-      </div>
-      <div class="social-row" style="margin-top:0">
-        <a class="chip" href="https://www.instagram.com/parapente_flyniton_team_/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a>
-        <a class="chip" href="https://www.tiktok.com/@parapente_flyniton_team_" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.4 4.6 5 5"/></svg>TikTok</a>
-      </div>
+<!-- CONTACTO -->
+<section class="sec contact" id="contacto">
+  <div class="wrap contact-grid">
+    <div>
+      <h2 class="h2"><span data-l="es">Reserva tu vuelo</span><span data-l="en">Book your flight</span></h2>
+      <p class="lead"><span data-l="es">Escribe tus datos y abrimos WhatsApp con el mensaje listo. Tú decides cuándo enviarlo.</span><span data-l="en">Fill in your details and we'll open WhatsApp with the message ready. You decide when to send it.</span></p>
+      <dl class="contact-list">
+        <div><dt>WhatsApp</dt><dd><a id="wa-num" href="https://wa.me/593988030968" target="_blank" rel="noopener">098 803 0968</a> <button type="button" class="copy" data-copy="+593988030968"><span data-l="es">Copiar</span><span data-l="en">Copy</span></button><br><small><span data-l="es">Desde el exterior: +593 98 803 0968</span><span data-l="en">From abroad: +593 98 803 0968</span></small></dd></div>
+        <div><dt><span data-l="es">Teléfono oficina</span><span data-l="en">Office phone</span></dt><dd><a href="tel:+59332742197">(03) 274 2197</a></dd></div>
+        <div><dt><span data-l="es">Oficina y punto de salida</span><span data-l="en">Office and meeting point</span></dt><dd>Pasaje Enrique Mideros y Calle Ambato, Baños de Agua Santa<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Pasaje%20Enrique%20Mideros%20y%20Calle%20Ambato%2C%20Ba%C3%B1os%20de%20Agua%20Santa%2C%20Ecuador" target="_blank" rel="noopener"><span data-l="es">Ver en el mapa</span><span data-l="en">View on map</span></a></dd></div>
+        <div><dt><span data-l="es">Zona de vuelo</span><span data-l="en">Flying site</span></dt><dd><span data-l="es">Cerro Niton, Pelileo, 3.000 msnm</span><span data-l="en">Cerro Niton, Pelileo, 3,000 m</span><br>1°17′10″ S, 78°32′38″ W<br><a href="https://www.google.com/maps/search/?api=1&amp;query=-1.286111%2C-78.543889" target="_blank" rel="noopener"><span data-l="es">Cómo llegar</span><span data-l="en">Get directions</span></a></dd></div>
+        <div><dt><span data-l="es">Tour tándem</span><span data-l="en">Tandem tour</span></dt><dd><span data-l="es">Salida 14:30 desde Baños, regreso 19:15, según el clima. ¿Estás en Ambato o Pelileo? Escríbenos y coordinamos.</span><span data-l="en">Leaves Baños at 14:30, back at 19:15, weather permitting. Staying in Ambato or Pelileo? Message us and we'll arrange it.</span></dd></div>
+      </dl>
     </div>
-    <div class="bento" id="gallery">
-      <button type="button" class="g-big" data-cap-es="Saltos de alegría en el Niton con el Tungurahua despejado" data-cap-en="Jumping for joy at Niton with a clear view of Tungurahua" aria-label="Saltos de alegría en el Niton con el Tungurahua despejado"><img src="img/jumpclear.webp" width="1400" height="1050" alt="Saltos de alegría en el Niton con el Tungurahua despejado" loading="lazy"><span class="cap"><span data-l="es">Saltos de alegría en el Niton con el Tungurahua despejado</span><span data-l="en">Jumping for joy at Niton with a clear view of Tungurahua</span></span></button>
-      <button type="button" class="g-tall" data-cap-es="Despegue tándem bajo el arcoíris" data-cap-en="Tandem takeoff under a rainbow" aria-label="Despegue tándem bajo el arcoíris"><img src="img/tricolor.webp" width="1000" height="1333" alt="Despegue tándem bajo el arcoíris" loading="lazy"><span class="cap"><span data-l="es">Despegue tándem bajo el arcoíris</span><span data-l="en">Tandem takeoff under a rainbow</span></span></button>
-      <button type="button" class="" data-cap-es="Volando frente al Tungurahua" data-cap-en="Flying in front of Tungurahua" aria-label="Volando frente al Tungurahua"><img src="img/volcano.webp" width="1300" height="1225" alt="Volando frente al Tungurahua" loading="lazy"><span class="cap"><span data-l="es">Volando frente al Tungurahua</span><span data-l="en">Flying in front of Tungurahua</span></span></button>
-      <button type="button" class="" data-cap-es="Cada vuelo deja fotos para recordar" data-cap-en="Every flight leaves photos to remember" aria-label="Cada vuelo deja fotos para recordar"><img src="img/photographer.webp" width="1400" height="1050" alt="Cada vuelo deja fotos para recordar" loading="lazy"><span class="cap"><span data-l="es">Cada vuelo deja fotos para recordar</span><span data-l="en">Every flight leaves photos to remember</span></span></button>
-      <button type="button" class="g-wide" data-cap-es="Hora azul sobre el valle, con el volcán al fondo" data-cap-en="Blue hour over the valley, with the volcano behind" aria-label="Hora azul sobre el valle, con el volcán al fondo"><img src="img/bluehour.webp" width="1440" height="813" alt="Hora azul sobre el valle, con el volcán al fondo" loading="lazy"><span class="cap"><span data-l="es">Hora azul sobre el valle, con el volcán al fondo</span><span data-l="en">Blue hour over the valley, with the volcano behind</span></span></button>
-      <button type="button" class="g-wide" data-cap-es="Inflando la vela con luz de atardecer" data-cap-en="Inflating the wing in the late-afternoon light" aria-label="Inflando la vela con luz de atardecer"><img src="img/rainbow.webp" width="1800" height="1350" alt="Inflando la vela con luz de atardecer" loading="lazy"><span class="cap"><span data-l="es">Inflando la vela con luz de atardecer</span><span data-l="en">Inflating the wing in the late-afternoon light</span></span></button>
-      <button type="button" class="g-tall" data-cap-es="Toda la familia en el campo de vuelo" data-cap-en="The whole family at the flying site" aria-label="Toda la familia en el campo de vuelo"><img src="img/family.webp" width="1000" height="1333" alt="Toda la familia en el campo de vuelo" loading="lazy"><span class="cap"><span data-l="es">Toda la familia en el campo de vuelo</span><span data-l="en">The whole family at the flying site</span></span></button>
-      <button type="button" class="g-tall" data-cap-es="Aterrizaje tándem con sonrisa incluida" data-cap-en="A tandem landing, smile included" aria-label="Aterrizaje tándem con sonrisa incluida"><img src="img/landing.webp" width="1000" height="1333" alt="Aterrizaje tándem con sonrisa incluida" loading="lazy"><span class="cap"><span data-l="es">Aterrizaje tándem con sonrisa incluida</span><span data-l="en">A tandem landing, smile included</span></span></button>
-      <button type="button" class="g-wide" data-cap-es="Atardecer en el Cerro Niton" data-cap-en="Sunset at Cerro Niton" aria-label="Atardecer en el Cerro Niton"><img src="img/sunset.webp" width="1440" height="810" alt="Atardecer en el Cerro Niton" loading="lazy"><span class="cap"><span data-l="es">Atardecer en el Cerro Niton</span><span data-l="en">Sunset at Cerro Niton</span></span></button>
-      <button type="button" class="g-wide" data-cap-es="Navidad con la comunidad en el Niton" data-cap-en="Christmas with the community at Niton" aria-label="Navidad con la comunidad en el Niton"><img src="img/community.webp" width="1600" height="778" alt="Navidad con la comunidad en el Niton" loading="lazy"><span class="cap"><span data-l="es">Navidad con la comunidad en el Niton</span><span data-l="en">Christmas with the community at Niton</span></span></button>
-      <button type="button" class="g-wide" data-cap-es="Grupo en el Niton entre las nubes" data-cap-en="A group at Niton among the clouds" aria-label="Grupo en el Niton entre las nubes"><img src="img/jumpcloud.webp" width="1400" height="1050" alt="Grupo en el Niton entre las nubes" loading="lazy"><span class="cap"><span data-l="es">Grupo en el Niton entre las nubes</span><span data-l="en">A group at Niton among the clouds</span></span></button>
-      <button type="button" class="g-wide" data-cap-es="Despegue hacia el valle de Pelileo" data-cap-en="Launching toward the Pelileo valley" aria-label="Despegue hacia el valle de Pelileo"><img src="img/launch.webp" width="1600" height="900" alt="Despegue hacia el valle de Pelileo" loading="lazy"><span class="cap"><span data-l="es">Despegue hacia el valle de Pelileo</span><span data-l="en">Launching toward the Pelileo valley</span></span></button>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTACTO ============ -->
-<section class="sec" id="contacto" style="padding-top:clamp(40px,5vw,70px)">
-  <div class="wrap">
-    <div class="book" data-reveal>
-      <div>
-        <h2 class="display h2" style="max-width:10ch"><span data-l="es">Reserva tu vuelo</span><span data-l="en">Book your flight</span></h2>
-        <p class="lead" style="margin-top:1rem"><span data-l="es">Escribe tus datos y abrimos WhatsApp con el mensaje listo. Tú decides cuándo enviarlo.</span><span data-l="en">Fill in your details and we'll open WhatsApp with the message ready. You decide when to send it.</span></p>
-        <div class="info">
-          <div class="info-row"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.2-4.1A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.2c.2-.5.6-.6 1-.5l.9 2c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l2 .9c.1.4 0 .8-.5 1-1 .6-2.4.6-3.9-.3a9.6 9.6 0 0 1-3.2-3.2C7.9 10.6 8.3 9 9 8.2z" fill="currentColor" stroke="none"/></svg></span><div><strong>WhatsApp</strong><p><span class="num" id="wa-num">098 803 0968</span><button class="copy" type="button" data-copy="0988030968"><span data-l="es">Copiar</span><span data-l="en">Copy</span></button></p><p class="sub"><span data-l="es">Desde el exterior: +593 98 803 0968</span><span data-l="en">From abroad: +593 98 803 0968</span></p></div></div>
-          <div class="info-row"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h3l1.5 4.5-2 1.5a11 11 0 0 0 6 6l1.5-2 4.5 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5a2 2 0 0 1 2-2z"/></svg></span><div><strong data-l="es">Teléfono oficina</strong><strong data-l="en">Office phone</strong><p class="num">(03) 274 2197</p></div></div>
-          <div class="info-row"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10" r="2.4"/></svg></span><div><strong data-l="es">Oficina y punto de salida</strong><strong data-l="en">Office and meeting point</strong><p>Pasaje Enrique Mideros y Calle Ambato, Baños de Agua Santa</p><p><a class="link small" href="https://www.google.com/maps/search/?api=1&amp;query=Pasaje%20Enrique%20Mideros%20y%20Calle%20Ambato%2C%20Ba%C3%B1os%20de%20Agua%20Santa%2C%20Ecuador" target="_blank" rel="noopener"><span data-l="es">Ver en el mapa</span><span data-l="en">View on map</span></a></p></div></div>
-          <div class="info-row"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20l7-12 4 6 3-4 6 10z"/><path d="M7.4 10.8l1.6 1.4 1.6-1.6"/></svg></span><div><strong data-l="es">Zona de vuelo</strong><strong data-l="en">Flying site</strong><p><span data-l="es">Cerro Niton, Pelileo · 3.000 msnm</span><span data-l="en">Cerro Niton, Pelileo · 3,000 m</span></p><p class="sub num">1°17′10″ S, 78°32′38″ W · <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=-1.286111%2C-78.543889" target="_blank" rel="noopener"><span data-l="es">Cómo llegar</span><span data-l="en">Get directions</span></a></p></div></div>
-          <div class="info-row"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><strong data-l="es">Tour tándem</strong><strong data-l="en">Tandem tour</strong><p><span data-l="es">Salida 14:30 desde Baños, regreso 19:15, según el clima. ¿Estás en Ambato o Pelileo? Escríbenos y coordinamos.</span><span data-l="en">Leaves Baños at 14:30, back at 19:15, weather permitting. Staying in Ambato or Pelileo? Message us and we'll arrange it.</span></p></div></div>
-        </div>
-        <div class="social-row">
-          <a class="chip" href="https://www.instagram.com/parapente_flyniton_team_/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>@parapente_flyniton_team_</a>
-          <a class="chip" href="https://www.tiktok.com/@parapente_flyniton_team_" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.4 4.6 5 5"/></svg>TikTok</a>
-        </div>
+    <form class="form" id="contact-form" novalidate>
+      <h3 class="h3 big"><span data-l="es">Tu reserva en 30 segundos</span><span data-l="en">Your booking in 30 seconds</span></h3>
+      <div class="field full">
+        <label for="f-name"><span data-l="es">Tu nombre</span><span data-l="en">Your name</span></label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required data-ph-es="Ej. María López" data-ph-en="e.g. Emma Smith" placeholder="Ej. María López">
+        <span class="err" id="f-name-err" role="alert" hidden><span data-l="es">Escribe tu nombre para que sepamos a quién responder.</span><span data-l="en">Add your name so we know who to reply to.</span></span>
       </div>
-
-      <form class="form" id="contact-form" novalidate>
-        <h3 class="card-title"><span data-l="es">Tu reserva en 30 segundos</span><span data-l="en">Your booking in 30 seconds</span></h3>
-        <div class="field">
-          <label for="f-name"><span data-l="es">Tu nombre</span><span data-l="en">Your name</span></label>
-          <input id="f-name" name="name" type="text" autocomplete="name" required data-ph-es="Ej. María López" data-ph-en="e.g. Emma Smith" placeholder="Ej. María López">
-          <span class="err" id="f-name-err" hidden><span data-l="es">Escribe tu nombre para que sepamos a quién responder.</span><span data-l="en">Add your name so we know who to reply to.</span></span>
-        </div>
-        <div class="field">
-          <label for="f-service"><span data-l="es">¿Qué te interesa?</span><span data-l="en">What are you interested in?</span></label>
-          <select id="f-service" name="service">
-            <option value="tandem" data-es="Vuelo tándem" data-en="Tandem flight">Vuelo tándem</option>
-            <option value="school" data-es="Curso de parapente" data-en="Paragliding course">Curso de parapente</option>
-            <option value="gear" data-es="Equipos BGD" data-en="BGD gear">Equipos BGD</option>
-            <option value="other" data-es="Otra consulta" data-en="Something else">Otra consulta</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="f-date"><span data-l="es">Fecha preferida</span><span data-l="en">Preferred date</span> <em data-l="es">(opcional)</em><em data-l="en">(optional)</em></label>
-          <input id="f-date" name="date" type="date">
-        </div>
-        <div class="field">
-          <label for="f-people"><span data-l="es">Personas</span><span data-l="en">People</span></label>
-          <input id="f-people" name="people" type="number" min="1" max="30" value="1" inputmode="numeric">
-        </div>
-        <div class="field full">
-          <label for="f-msg"><span data-l="es">Mensaje</span><span data-l="en">Message</span> <em data-l="es">(opcional)</em><em data-l="en">(optional)</em></label>
-          <textarea id="f-msg" name="msg" data-ph-es="Hotel donde te recogemos, preguntas, idioma…" data-ph-en="Hotel for pickup, questions, language…" placeholder="Hotel donde te recogemos, preguntas, idioma…"></textarea>
-        </div>
-        <div class="form-foot">
-          <a class="btn btn-sun" id="f-send" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.2-4.1A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.2c.2-.5.6-.6 1-.5l.9 2c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l2 .9c.1.4 0 .8-.5 1-1 .6-2.4.6-3.9-.3a9.6 9.6 0 0 1-3.2-3.2C7.9 10.6 8.3 9 9 8.2z" fill="currentColor" stroke="none"/></svg><span data-l="es">Abrir WhatsApp con mi mensaje</span><span data-l="en">Open WhatsApp with my message</span></a>
-          <span class="small haze"><span data-l="es">Te responde directamente el equipo Flyniton.</span><span data-l="en">The Flyniton team replies to you directly.</span></span>
-        </div>
-      </form>
-    </div>
+      <div class="field full">
+        <label for="f-service"><span data-l="es">¿Qué te interesa?</span><span data-l="en">What are you interested in?</span></label>
+        <select id="f-service" name="service">
+          <option value="tandem" data-es="Vuelo tándem" data-en="Tandem flight">Vuelo tándem</option>
+          <option value="school" data-es="Curso de parapente" data-en="Paragliding course">Curso de parapente</option>
+          <option value="gear" data-es="Equipos importados BGD" data-en="Imported BGD gear">Equipos importados BGD</option>
+          <option value="other" data-es="Otra consulta" data-en="Something else">Otra consulta</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-date"><span data-l="es">Fecha preferida</span><span data-l="en">Preferred date</span> <em><span data-l="es">(opcional)</span><span data-l="en">(optional)</span></em></label>
+        <input id="f-date" name="date" type="date">
+      </div>
+      <div class="field">
+        <label for="f-people"><span data-l="es">Personas</span><span data-l="en">People</span></label>
+        <input id="f-people" name="people" type="number" min="1" max="30" value="1" inputmode="numeric">
+      </div>
+      <div class="field full">
+        <label for="f-msg"><span data-l="es">Mensaje</span><span data-l="en">Message</span> <em><span data-l="es">(opcional)</span><span data-l="en">(optional)</span></em></label>
+        <textarea id="f-msg" name="msg" rows="3" data-ph-es="Hotel donde te recogemos, preguntas, idioma…" data-ph-en="Hotel for pickup, questions, language…" placeholder="Hotel donde te recogemos, preguntas, idioma…"></textarea>
+      </div>
+      <div class="form-foot">
+        <a class="btn btn-ink" id="f-send" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-l="es">Abrir WhatsApp con mi mensaje</span><span data-l="en">Open WhatsApp with my message</span></a>
+        <small><span data-l="es">Te responde directamente el equipo Flyniton.</span><span data-l="en">The Flyniton team replies to you directly.</span></small>
+      </div>
+    </form>
   </div>
 </section>
 </main>
 
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
+<footer class="foot">
   <div class="wrap foot-grid">
-    <div>
-      <img src="img/logo-white.png" width="635" height="214" alt="Flyniton Cía. Ltd. Operadora de Turismo" style="height:60px;width:auto" loading="lazy">
-      <p class="haze small" style="margin-top:1rem;max-width:36ch"><span data-l="es">Operadora de turismo de aventura y escuela de parapente. Vuelos biplaza desde el Cerro Niton, Tungurahua, Ecuador.</span><span data-l="en">Adventure tour operator and paragliding school. Tandem flights from Cerro Niton, Tungurahua, Ecuador.</span></p>
+    <div class="foot-brand">
+      <img src="img/logo-white.png" width="635" height="214" alt="Flyniton Cía. Ltd. Operadora de Turismo" loading="lazy">
+      <p><span data-l="es">Operadora de turismo de aventura y escuela de parapente. Vuelos biplaza desde el Cerro Niton, Tungurahua, Ecuador. Importadores oficiales de equipos BGD.</span><span data-l="en">Adventure tour operator and paragliding school. Tandem flights from Cerro Niton, Tungurahua, Ecuador. Official importers of BGD gear.</span></p>
     </div>
     <div>
-      <h4><span data-l="es">Explora</span><span data-l="en">Explore</span></h4>
-      <ul class="small">
+      <h3><span data-l="es">Explora</span><span data-l="en">Explore</span></h3>
+      <ul>
         <li><a href="#vuelos"><span data-l="es">Vuelos tándem</span><span data-l="en">Tandem flights</span></a></li>
-        <li><a href="#mapa"><span data-l="es">Mapa 3D</span><span data-l="en">3D map</span></a></li>
+        <li><a href="#mapa"><span data-l="es">Mapa</span><span data-l="en">Map</span></a></li>
         <li><a href="#escuela"><span data-l="es">Escuela de parapente</span><span data-l="en">Paragliding school</span></a></li>
         <li><a href="#seguridad"><span data-l="es">Seguridad</span><span data-l="en">Safety</span></a></li>
-        <li><a href="#equipos"><span data-l="es">Equipos BGD</span><span data-l="en">BGD gear</span></a></li>
+        <li><a href="#equipos"><span data-l="es">Equipos importados</span><span data-l="en">Imported gear</span></a></li>
       </ul>
     </div>
     <div>
-      <h4><span data-l="es">Contacto</span><span data-l="en">Contact</span></h4>
-      <ul class="small haze">
-        <li class="num">WhatsApp 098 803 0968</li>
-        <li class="num"><span data-l="es">Oficina</span><span data-l="en">Office</span> (03) 274 2197</li>
+      <h3><span data-l="es">Contacto</span><span data-l="en">Contact</span></h3>
+      <ul>
+        <li><a href="https://wa.me/593988030968" target="_blank" rel="noopener">WhatsApp 098 803 0968</a></li>
+        <li><span data-l="es">Oficina</span><span data-l="en">Office</span> <a href="tel:+59332742197">(03) 274 2197</a></li>
         <li>Pasaje Enrique Mideros y Calle Ambato, Baños de Agua Santa</li>
       </ul>
     </div>
     <div>
-      <h4><span data-l="es">Síguenos</span><span data-l="en">Follow us</span></h4>
-      <ul class="small">
+      <h3><span data-l="es">Síguenos</span><span data-l="en">Follow us</span></h3>
+      <ul>
         <li><a href="https://www.instagram.com/parapente_flyniton_team_/" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="https://www.tiktok.com/@parapente_flyniton_team_" target="_blank" rel="noopener">TikTok</a></li>
-        <li><a data-wa="general" href="https://wa.me/593988030968" target="_blank" rel="noopener">WhatsApp</a></li>
       </ul>
     </div>
   </div>
-  <div class="wrap foot-base">
-    <span>© <span id="yr">2026</span> Flyniton Cía. Ltd. <span data-l="es">Todos los derechos reservados.</span><span data-l="en">All rights reserved.</span></span>
-    <span>Baños de Agua Santa · Tungurahua · Ecuador</span>
-  </div>
+  <p class="wrap legal">© <span id="yr">2026</span> Flyniton Cía. Ltd. <span data-l="es">Todos los derechos reservados.</span><span data-l="en">All rights reserved.</span> Baños de Agua Santa, Tungurahua, Ecuador.</p>
 </footer>
 
-<a class="fab hide" data-wa="tandem" href="https://wa.me/593988030968" target="_blank" rel="noopener" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.2-4.1A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.2c.2-.5.6-.6 1-.5l.9 2c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l2 .9c.1.4 0 .8-.5 1-1 .6-2.4.6-3.9-.3a9.6 9.6 0 0 1-3.2-3.2C7.9 10.6 8.3 9 9 8.2z" fill="currentColor" stroke="none"/></svg><span class="t"><span data-l="es">Reservar</span><span data-l="en">Book</span></span></a>
+<a class="fab hide" data-wa="tandem" href="https://wa.me/593988030968" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-l="es">Reservar</span><span data-l="en">Book</span></a>
 
-<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Galería">
-  <div class="top"><button type="button" id="lb-close" aria-label="Cerrar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
-  <div class="stage"><img id="lb-img" alt=""></div>
-  <div class="bottom">
-    <button type="button" id="lb-prev" aria-label="Anterior"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-    <p id="lb-cap"></p>
-    <button type="button" id="lb-next" aria-label="Siguiente"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
-  </div>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galería" hidden>
+  <button type="button" class="lb-btn" id="lb-close" aria-label="Cerrar">×</button>
+  <button type="button" class="lb-btn" id="lb-prev" aria-label="Anterior">‹</button>
+  <div class="stage"><img id="lb-img" alt=""><p id="lb-cap"></p></div>
+  <button type="button" class="lb-btn" id="lb-next" aria-label="Siguiente">›</button>
 </div>
-
-</div>
-
-<script>
-(function(){
-  var WA = "593988030968";
-  var root = document.documentElement;
-  var lang = "es";
-  var reduce = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
-
-  var MSG = {
-    tandem:{es:"Hola Flyniton, quiero reservar un vuelo tándem en el Cerro Niton. ¿Qué disponibilidad y tarifa tienen?",
-            en:"Hi Flyniton, I'd like to book a tandem paragliding flight at Cerro Niton. What availability and price do you have?"},
-    school:{es:"Hola Flyniton, quiero información del curso de parapente: próximas fechas, valor y número de sesiones.",
-            en:"Hi Flyniton, I'd like information about the paragliding course: next dates, price and number of sessions."},
-    general:{es:"Hola Flyniton, quiero más información.", en:"Hi Flyniton, I'd like more information."}
-  };
-  function waUrl(text){ return "https://wa.me/" + WA + "?text=" + encodeURIComponent(text); }
-
-  /* ---------- language ---------- */
-  var ARIA = {
-    "map-left":{es:"Girar a la izquierda",en:"Rotate left"},
-    "map-right":{es:"Girar a la derecha",en:"Rotate right"},
-    "lb-close":{es:"Cerrar",en:"Close"},
-    "lb-prev":{es:"Anterior",en:"Previous"},
-    "lb-next":{es:"Siguiente",en:"Next"}
-  };
-  function applyLang(l){
-    lang = l;
-    root.classList.toggle("lang-en", l === "en");
-    root.setAttribute("lang", l);
-    document.querySelectorAll("[data-set-lang]").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.setLang === l)); });
-    document.querySelectorAll("[data-ph-es]").forEach(function(el){ el.placeholder = el.dataset[l === "en" ? "phEn" : "phEs"]; });
-    document.querySelectorAll("option[data-es]").forEach(function(o){ o.textContent = o.dataset[l]; });
-    document.querySelectorAll("[data-wa]").forEach(function(a){ var k = a.dataset.wa; if (MSG[k]) a.href = waUrl(MSG[k][l]); });
-    Object.keys(ARIA).forEach(function(id){ var el = document.getElementById(id); if (el) el.setAttribute("aria-label", ARIA[id][l]); });
-    var cv = document.getElementById("map3d");
-    if (cv) cv.setAttribute("aria-label", l === "en"
-      ? "Illustrative 3D map: Cerro Niton at 3,000 m, Pelileo, the Patate valley, Baños de Agua Santa at 1,820 m and Tungurahua volcano. Drag or use the arrow keys to rotate it."
-      : "Mapa 3D ilustrativo: Cerro Niton a 3.000 metros, Pelileo, el valle de Patate, Baños de Agua Santa a 1.820 metros y el volcán Tungurahua. Arrastra o usa las flechas para girarlo.");
-    updateGear(); updateForm(); updatePlayLabel();
-    try { localStorage.setItem("flyniton-lang", l); } catch(e){}
-  }
-  document.querySelectorAll("[data-set-lang]").forEach(function(b){ b.addEventListener("click", function(){ applyLang(b.dataset.setLang); }); });
-
-  /* ---------- nav ---------- */
-  var shell = document.getElementById("nav-shell");
-  var fab = document.querySelector(".fab");
-  var hero = document.getElementById("inicio");
-  var contactInView = false;
-  if ("IntersectionObserver" in window){
-    new IntersectionObserver(function(en){ contactInView = en[0].isIntersecting; onScroll(); }, {rootMargin:"0px 0px -20% 0px"}).observe(document.getElementById("contacto"));
-  }
-  var menuBtn = document.querySelector(".menu-btn");
-  var mobileNav = document.getElementById("mobile-nav");
-  function onScroll(){
-    var y = window.scrollY || 0;
-    shell.classList.toggle("scrolled", y > 30);
-    fab.classList.toggle("hide", y < hero.offsetHeight * 0.7 || contactInView);
-  }
-  menuBtn.addEventListener("click", function(){
-    var open = mobileNav.hidden;
-    mobileNav.hidden = !open;
-    menuBtn.setAttribute("aria-expanded", String(open));
-  });
-  mobileNav.addEventListener("click", function(e){
-    if (e.target.closest("a")) { mobileNav.hidden = true; menuBtn.setAttribute("aria-expanded","false"); }
-  });
-  document.addEventListener("keydown", function(e){ if (e.key === "Escape" && !mobileNav.hidden){ mobileNav.hidden = true; menuBtn.setAttribute("aria-expanded","false"); menuBtn.focus(); } });
-  window.addEventListener("scroll", onScroll, {passive:true});
-
-  /* scrollspy */
-  if ("IntersectionObserver" in window){
-    var links = {};
-    document.querySelectorAll(".nav a[href^='#']").forEach(function(a){ links[a.getAttribute("href").slice(1)] = a; });
-    var spy = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if (en.isIntersecting && links[en.target.id]){
-          Object.keys(links).forEach(function(k){ links[k].removeAttribute("aria-current"); });
-          links[en.target.id].setAttribute("aria-current","true");
-        }
-      });
-    }, {rootMargin:"-45% 0px -50% 0px"});
-    Object.keys(links).forEach(function(id){ var s = document.getElementById(id); if (s) spy.observe(s); });
-  }
-
-  /* ---------- scroll reveal (movement only) ---------- */
-  if (!reduce && "IntersectionObserver" in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
-    }, {rootMargin:"0px 0px -8% 0px"});
-    var vh = window.innerHeight;
-    document.querySelectorAll("[data-reveal]").forEach(function(el){
-      if (el.getBoundingClientRect().top > vh) { el.classList.add("rv"); io.observe(el); }
-    });
-  }
-
-  /* ---------- photo stack tilt (desktop pointers only) ---------- */
-  var tiltEl = document.querySelector("[data-tilt]");
-  if (tiltEl && !reduce && window.matchMedia("(hover:hover) and (pointer:fine)").matches){
-    var f1 = tiltEl.querySelector(".s1"), f2 = tiltEl.querySelector(".s2");
-    tiltEl.addEventListener("pointermove", function(e){
-      var r = tiltEl.getBoundingClientRect();
-      var px = (e.clientX - r.left) / r.width - .5, py = (e.clientY - r.top) / r.height - .5;
-      f1.style.transform = "rotate(-3deg) rotateY(" + (px * 10) + "deg) rotateX(" + (-py * 8) + "deg) translateZ(10px)";
-      f2.style.transform = "rotate(3deg) rotateY(" + (px * 14) + "deg) rotateX(" + (-py * 10) + "deg) translateZ(30px)";
-    });
-    tiltEl.addEventListener("pointerleave", function(){ f1.style.transform = ""; f2.style.transform = ""; });
-  }
-
-  /* ---------- gear quote ---------- */
-  var gearBtns = Array.prototype.slice.call(document.querySelectorAll(".gear"));
-  var gearSend = document.getElementById("gear-send");
-  var gearSummary = document.getElementById("gear-summary");
-  var summaryDefault = gearSummary.innerHTML;
-  function updateGear(){
-    var sel = gearBtns.filter(function(b){ return b.getAttribute("aria-pressed") === "true"; })
-                      .map(function(b){ return b.dataset[lang === "en" ? "gearEn" : "gearEs"]; });
-    var text;
-    if (sel.length){
-      gearSummary.textContent = (lang === "en" ? "Your quote: " : "Tu cotización: ") + sel.join(", ") + ".";
-      text = lang === "en"
-        ? "Hi Flyniton, I'd like a quote and catalogue for BGD gear: " + sel.join(", ") + ". My flying level is: "
-        : "Hola Flyniton, quiero cotización y catálogo de equipos BGD: " + sel.join(", ") + ". Mi nivel de vuelo es: ";
-    } else {
-      gearSummary.innerHTML = summaryDefault;
-      text = lang === "en" ? "Hi Flyniton, I'd like the BGD gear catalogue." : "Hola Flyniton, quiero el catálogo de equipos BGD.";
-    }
-    gearSend.href = waUrl(text);
-  }
-  gearBtns.forEach(function(b){ b.addEventListener("click", function(){ b.setAttribute("aria-pressed", String(b.getAttribute("aria-pressed") !== "true")); updateGear(); }); });
-
-  /* ---------- contact form → WhatsApp ---------- */
-  var f = {
-    name: document.getElementById("f-name"), service: document.getElementById("f-service"),
-    date: document.getElementById("f-date"), people: document.getElementById("f-people"),
-    msg: document.getElementById("f-msg"), send: document.getElementById("f-send"),
-    err: document.getElementById("f-name-err"), form: document.getElementById("contact-form")
-  };
-  try { var t0 = new Date(); t0.setMinutes(t0.getMinutes() - t0.getTimezoneOffset()); f.date.min = t0.toISOString().slice(0,10); } catch(e){}
-  function fmtDate(v){ var p = (v || "").split("-"); return p.length === 3 ? p[2] + "/" + p[1] + "/" + p[0] : v; }
-  function buildMessage(){
-    var en = lang === "en";
-    var svc = f.service.options[f.service.selectedIndex].dataset[lang];
-    var lines = [];
-    lines.push(en ? "Hi Flyniton! My name is " + (f.name.value.trim() || "…") + "." : "¡Hola Flyniton! Me llamo " + (f.name.value.trim() || "…") + ".");
-    lines.push((en ? "I'm interested in: " : "Me interesa: ") + svc + ".");
-    if (f.date.value) lines.push((en ? "Preferred date: " : "Fecha preferida: ") + fmtDate(f.date.value) + ".");
-    var n = parseInt(f.people.value, 10);
-    if (n > 0) lines.push((en ? "People: " : "Personas: ") + n + ".");
-    if (f.msg.value.trim()) lines.push(f.msg.value.trim());
-    return lines.join("\n");
-  }
-  function updateForm(){ f.send.href = waUrl(buildMessage()); }
-  ["input","change"].forEach(function(ev){ f.form.addEventListener(ev, function(){
-    if (f.name.value.trim()) { f.err.hidden = true; f.name.removeAttribute("aria-invalid"); }
-    updateForm();
-  }); });
-  f.send.addEventListener("click", function(e){
-    if (!f.name.value.trim()){ e.preventDefault(); f.err.hidden = false; f.name.setAttribute("aria-invalid","true"); f.name.focus(); }
-  });
-  f.form.addEventListener("submit", function(e){ e.preventDefault(); f.send.click(); });
-
-  /* ---------- copy number ---------- */
-  document.querySelectorAll("[data-copy]").forEach(function(b){
-    b.addEventListener("click", function(){
-      var label = b.innerHTML;
-      function done(ok){
-        b.textContent = ok ? (lang === "en" ? "Copied" : "Copiado") : (lang === "en" ? "Select it" : "Selecciónalo");
-        if (!ok){ var r = document.createRange(); r.selectNodeContents(document.getElementById("wa-num")); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); }
-        setTimeout(function(){ b.innerHTML = label; }, 1800);
-      }
-      try { navigator.clipboard.writeText(b.dataset.copy).then(function(){ done(true); }, function(){ done(false); }); }
-      catch(e){ done(false); }
-    });
-  });
-
-  /* ---------- lightbox ---------- */
-  var items = Array.prototype.slice.call(document.querySelectorAll("#gallery button"));
-  var lb = document.getElementById("lightbox"), lbImg = document.getElementById("lb-img"), lbCap = document.getElementById("lb-cap");
-  var idx = 0, lastFocus = null;
-  function show(i){
-    idx = (i + items.length) % items.length;
-    var img = items[idx].querySelector("img");
-    lbImg.src = img.src; lbImg.alt = img.alt;
-    lbCap.textContent = items[idx].dataset[lang === "en" ? "capEn" : "capEs"] || "";
-  }
-  function openLb(i){ lastFocus = document.activeElement; show(i); lb.hidden = false; document.body.style.overflow = "hidden"; document.getElementById("lb-close").focus(); }
-  function closeLb(){ lb.hidden = true; document.body.style.overflow = ""; if (lastFocus) lastFocus.focus(); }
-  items.forEach(function(b, i){ b.addEventListener("click", function(){ openLb(i); }); });
-  document.getElementById("lb-close").addEventListener("click", closeLb);
-  document.getElementById("lb-prev").addEventListener("click", function(){ show(idx - 1); });
-  document.getElementById("lb-next").addEventListener("click", function(){ show(idx + 1); });
-  lb.addEventListener("click", function(e){ if (e.target === lb || e.target.classList.contains("stage")) closeLb(); });
-  document.addEventListener("keydown", function(e){
-    if (lb.hidden) return;
-    if (e.key === "Escape") closeLb();
-    else if (e.key === "ArrowLeft") show(idx - 1);
-    else if (e.key === "ArrowRight") show(idx + 1);
-  });
-
-  /* =====================================================================
-     3D relief of the flying site, drawn on a 2D canvas (no library).
-     Frame: x = km east of Cerro Niton, z = km south of it. Heights in metres.
-     Places are approximate; relief is exaggerated (EX).
-     ===================================================================== */
-  var map = null;
-  var playBtn = document.getElementById("map-play");
-  var PAUSE_SVG = playBtn ? playBtn.innerHTML : "";
-  var PLAY_SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>';
-  function updatePlayLabel(){
-    if (!playBtn || !map) return;
-    var on = map.playing;
-    playBtn.setAttribute("aria-pressed", String(on));
-    playBtn.setAttribute("aria-label", on ? (lang === "en" ? "Pause rotation" : "Pausar giro") : (lang === "en" ? "Resume rotation" : "Reanudar giro"));
-    playBtn.innerHTML = on ? PAUSE_SVG : PLAY_SVG;
-  }
-
-  (function initMap(){
-    var cv = document.getElementById("map3d");
-    if (!cv || !cv.getContext) return;
-    var ctx = cv.getContext("2d");
-    var X0 = -6, X1 = 19.5, Z0 = -4, Z1 = 25.5, EX = 2.0, BASE_M = 1150;
-    var small = cv.clientWidth < 640;
-    var NX = small ? 38 : 58, NZ = small ? 42 : 66;
-
-    var RIVER = [[-7,7.6],[2,8.6],[8,10.6],[13,12],[21,11.2]];
-    function riverDist(x, z){
-      var best = 1e9;
-      for (var i = 0; i < RIVER.length - 1; i++){
-        var ax = RIVER[i][0], az = RIVER[i][1], vx = RIVER[i+1][0] - ax, vz = RIVER[i+1][1] - az;
-        var t = ((x - ax) * vx + (z - az) * vz) / (vx * vx + vz * vz); t = Math.max(0, Math.min(1, t));
-        var dx = x - (ax + vx * t), dz = z - (az + vz * t), d = dx * dx + dz * dz;
-        if (d < best) best = d;
-      }
-      return Math.sqrt(best);
-    }
-    function H(x, z){
-      var h = 2450;
-      h += 610 * Math.exp(-((x * x) / (2 * 1.7 * 1.7) + ((z + .5) * (z + .5)) / (2 * 2.8 * 2.8)));        // Cerro Niton ridge
-      var dx = x - 11.3, dz = z - 20, c = Math.max(0, 1 - Math.sqrt(dx * dx + dz * dz) / 8.5);
-      h += 2620 * c;                                                                      // Tungurahua cone
-      var r = riverDist(x, z), depth = 520 + 250 * Math.max(0, Math.min(1, (x - 2) / 12));
-      h -= depth * Math.exp(-(r * r) / (2 * 1.4 * 1.4));                                                  // Pastaza canyon to Baños
-      var px = x - 6, pz = z - .5;
-      h -= 260 * Math.exp(-(px * px) / (2 * 16) - (pz * pz) / (2 * 4.84));                               // Patate valley
-      h += 380 * Math.exp(-((x + 7) * (x + 7)) / 18);                                                     // western páramo
-      h += 300 * Math.exp(-((x - 21) * (x - 21)) / 14 - ((z - 4) * (z - 4)) / 60);                        // eastern ridge
-      h += 38 * Math.sin(x * .9 + z * .55) + 26 * Math.sin(z * 1.1 - x * .35);
-      return h;
-    }
-    function yk(m){ return (m - BASE_M) / 1000 * EX; }
-
-    /* mesh */
-    var NV = (NX + 1) * (NZ + 1);
-    var wx = new Float32Array(NV), wy = new Float32Array(NV), wz = new Float32Array(NV), hm = new Float32Array(NV);
-    for (var j = 0; j <= NZ; j++) for (var i = 0; i <= NX; i++){
-      var k = j * (NX + 1) + i, x = X0 + (X1 - X0) * i / NX, z = Z0 + (Z1 - Z0) * j / NZ, h = H(x, z);
-      wx[k] = x; wz[k] = z; hm[k] = h; wy[k] = yk(h);
-    }
-    var RAMP = [[1600,[44,82,60]],[2100,[64,106,66]],[2500,[98,126,74]],[2900,[126,134,84]],[3300,[122,114,92]],[3800,[98,88,86]],[4300,[80,72,76]],[4650,[132,132,142]],[4850,[230,236,244]]];
-    function ramp(m){
-      if (m <= RAMP[0][0]) return RAMP[0][1];
-      for (var q = 1; q < RAMP.length; q++){
-        if (m <= RAMP[q][0]){
-          var a = RAMP[q-1], b = RAMP[q], t = (m - a[0]) / (b[0] - a[0]);
-          return [a[1][0] + (b[1][0] - a[1][0]) * t, a[1][1] + (b[1][1] - a[1][1]) * t, a[1][2] + (b[1][2] - a[1][2]) * t];
-        }
-      }
-      return RAMP[RAMP.length - 1][1];
-    }
-    var Lx = -.68, Ly = .62, Lz = -.38, Ll = Math.sqrt(Lx*Lx + Ly*Ly + Lz*Lz); Lx /= Ll; Ly /= Ll; Lz /= Ll;   // low sun from the west
-    var quads = [];   // [a,b,c,d,color]
-    var cellX = (X1 - X0) / NX, cellZ = (Z1 - Z0) / NZ;
-    for (j = 0; j < NZ; j++) for (i = 0; i < NX; i++){
-      var a = j * (NX + 1) + i, b = a + 1, c = a + NX + 2, d = a + NX + 1;
-      var dhx = ((wy[b] - wy[a]) + (wy[c] - wy[d])) / (2 * cellX), dhz = ((wy[d] - wy[a]) + (wy[c] - wy[b])) / (2 * cellZ);
-      var nx = -dhx, ny = 1, nz = -dhz, nl = Math.sqrt(nx*nx + ny*ny + nz*nz); nx /= nl; ny /= nl; nz /= nl;
-      var lam = Math.max(0, nx * Lx + ny * Ly + nz * Lz);
-      var col = ramp((hm[a] + hm[b] + hm[c] + hm[d]) / 4), s = .36 + .86 * lam;
-      var R = Math.min(255, col[0] * s * (1 + .14 * lam)), G = Math.min(255, col[1] * s * (1 + .03 * lam)), B = Math.min(255, col[2] * s * (1 - .06 * lam) + 10 * (1 - lam));
-      quads.push([a, b, c, d, "rgb(" + (R|0) + "," + (G|0) + "," + (B|0) + ")"]);
-    }
-    /* skirts: diorama sides down to the base */
-    var baseY = yk(BASE_M - 200);
-    var extra = [];   // extra vertices for the base
-    function addBase(k){ extra.push([wx[k], baseY, wz[k]]); return NV + extra.length - 1; }
-    function skirt(k1, k2, shade){
-      var b1 = addBase(k1), b2 = addBase(k2);
-      quads.push([k1, k2, b2, b1, shade]);
-    }
-    for (i = 0; i < NX; i++){ skirt(i, i + 1, "#22385F"); skirt(NZ * (NX + 1) + i, NZ * (NX + 1) + i + 1, "#1A2C4E"); }
-    for (j = 0; j < NZ; j++){ skirt(j * (NX + 1), (j + 1) * (NX + 1), "#1D3156"); skirt(j * (NX + 1) + NX, (j + 1) * (NX + 1) + NX, "#2A4370"); }
-    var TOT = NV + extra.length;
-    var sx = new Float32Array(TOT), sy = new Float32Array(TOT), sz = new Float32Array(TOT);
-    var qd = new Float32Array(quads.length), order = new Uint32Array(quads.length);
-
-    var MARKERS = [
-      {x:0, z:0, es:"Cerro Niton · 3.000 m", en:"Cerro Niton · 3,000 m", take:true},
-      {x:13.2, z:12.1, es:"Baños · 1.820 m", en:"Baños · 1,820 m"},
-      {x:11.3, z:20, es:"Volcán Tungurahua", en:"Tungurahua volcano"},
-      {x:0.3, z:4.9, es:"Pelileo", en:"Pelileo"},
-      {x:4.3, z:3.2, es:"Patate", en:"Patate"}
-    ];
-    var ROAD = [[13.2,12.1],[11.5,11.6],[9.5,10.9],[7.5,10],[5.5,9.1],[3.5,8.1],[1.8,6.6],[.6,5],[0,3.2],[0,1.2],[0,0]];
-
-    var W = 0, Hh = 0, dpr = 1, S = 1, OX = 0, OY = 0;
-    var yaw = Math.PI - .42, pitch = .66, D = 52;
-    var CX = 7, CZ = 11, CY = yk(2600);
-    var state = {playing: !reduce, visible: true, dragging: false, last: 0, t: 0, resumeAt: 0};
-    map = state;
-
-    function resize(){
-      var r = cv.getBoundingClientRect();
-      dpr = Math.min(2, window.devicePixelRatio || 1);
-      W = r.width; Hh = r.height;
-      cv.width = Math.round(W * dpr); cv.height = Math.round(Hh * dpr);
-      fit();
-    }
-    /* scale so the whole relief fits at every rotation, with room for labels */
-    function fit(){
-      var keep = yaw, mnx = 1e9, mxx = -1e9, mny = 1e9, mxy = -1e9, step = Math.max(1, Math.floor(NV / 900));
-      for (var a = 0; a < 12; a++){
-        yaw = a * Math.PI / 6; prep();
-        for (var k = 0; k < NV; k += step){
-          var dx = wx[k] - CX, dy = wy[k] - CY, dz = wz[k] - CZ;
-          var rx = dx * ca - dz * sa, rz = dx * sa + dz * ca, Yv = dy * cp - rz * sp, Zv = rz * cp + dy * sp, f = D / (D - Zv);
-          var X = rx * f, Y = -Yv * f;
-          if (X < mnx) mnx = X; if (X > mxx) mxx = X; if (Y < mny) mny = Y; if (Y > mxy) mxy = Y;
-        }
-      }
-      yaw = keep;
-      var padTop = 46;
-      S = Math.min(.94 * W / (mxx - mnx), .9 * (Hh - padTop) / (mxy - mny));
-      OX = W / 2 - S * (mnx + mxx) / 2;
-      OY = padTop + (Hh - padTop) / 2 - S * (mny + mxy) / 2;
-    }
-    var ca, sa, cp, sp;
-    function prep(){ ca = Math.cos(yaw); sa = Math.sin(yaw); cp = Math.cos(pitch); sp = Math.sin(pitch); }
-    function project(x, y, z, out){
-      var dx = x - CX, dy = y - CY, dz = z - CZ;
-      var rx = dx * ca - dz * sa, rz = dx * sa + dz * ca;
-      var Yv = dy * cp - rz * sp, Zv = rz * cp + dy * sp;
-      var f = D / (D - Zv);
-      out[0] = OX + rx * S * f; out[1] = OY - Yv * S * f; out[2] = Zv;
-    }
-    var tmp = [0,0,0];
-
-    function label(x, y, text, take){
-      ctx.font = "600 12px 'Plus Jakarta Sans', system-ui, sans-serif";
-      var w = ctx.measureText(text).width + 18, h = 26, lx = x - w / 2, ly = y - 34 - h;
-      ctx.strokeStyle = take ? "rgba(255,198,90,.9)" : "rgba(241,245,251,.55)";
-      ctx.lineWidth = 1.2;
-      ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x, ly + h); ctx.stroke();
-      ctx.fillStyle = take ? "#FFC65A" : "rgba(12,26,51,.86)";
-      ctx.beginPath();
-      if (ctx.roundRect) ctx.roundRect(lx, ly, w, h, 13); else ctx.rect(lx, ly, w, h);
-      ctx.fill();
-      if (!take){ ctx.strokeStyle = "rgba(241,245,251,.22)"; ctx.stroke(); }
-      ctx.fillStyle = take ? "#0B1A36" : "#F1F5FB";
-      ctx.textAlign = "center"; ctx.textBaseline = "middle";
-      ctx.fillText(text, x, ly + h / 2 + .5);
-      ctx.fillStyle = take ? "#FFC65A" : "#F1F5FB";
-      ctx.beginPath(); ctx.arc(x, y, take ? 5 : 3.5, 0, Math.PI * 2); ctx.fill();
-    }
-
-    function draw(){
-      if (!W) return;
-      prep();
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      ctx.clearRect(0, 0, W, Hh);
-      var k;
-      for (k = 0; k < NV; k++){ project(wx[k], wy[k], wz[k], tmp); sx[k] = tmp[0]; sy[k] = tmp[1]; sz[k] = tmp[2]; }
-      for (k = 0; k < extra.length; k++){ var e = extra[k]; project(e[0], e[1], e[2], tmp); sx[NV + k] = tmp[0]; sy[NV + k] = tmp[1]; sz[NV + k] = tmp[2]; }
-      for (k = 0; k < quads.length; k++){ var q = quads[k]; qd[k] = sz[q[0]] + sz[q[1]] + sz[q[2]] + sz[q[3]]; order[k] = k; }
-      var ord = Array.prototype.slice.call(order).sort(function(m, n){ return qd[m] - qd[n]; });
-      ctx.lineJoin = "round"; ctx.lineWidth = .7;
-      for (var o = 0; o < ord.length; o++){
-        var Q = quads[ord[o]];
-        ctx.beginPath();
-        ctx.moveTo(sx[Q[0]], sy[Q[0]]); ctx.lineTo(sx[Q[1]], sy[Q[1]]); ctx.lineTo(sx[Q[2]], sy[Q[2]]); ctx.lineTo(sx[Q[3]], sy[Q[3]]);
-        ctx.closePath();
-        ctx.fillStyle = Q[4]; ctx.strokeStyle = Q[4];
-        ctx.fill(); ctx.stroke();
-      }
-
-      /* road from Baños */
-      ctx.save();
-      ctx.setLineDash([2, 6]); ctx.lineCap = "round"; ctx.lineWidth = 2.4; ctx.strokeStyle = "rgba(255,255,255,.9)";
-      ctx.beginPath();
-      for (k = 0; k < ROAD.length; k++){ project(ROAD[k][0], yk(H(ROAD[k][0], ROAD[k][1]) + 40), ROAD[k][1], tmp); if (k) ctx.lineTo(tmp[0], tmp[1]); else ctx.moveTo(tmp[0], tmp[1]); }
-      ctx.stroke();
-      ctx.restore();
-
-      /* flight loop over the valley, back to the same field */
-      function loopPt(t){ return [1.9 + 2.4 * Math.cos(t), 3200 + 170 * Math.sin(2 * t), .9 + 1.7 * Math.sin(t)]; }
-      ctx.save();
-      ctx.setLineDash([7, 6]); ctx.lineWidth = 2.6; ctx.strokeStyle = "#FF8A3D";
-      ctx.shadowColor = "rgba(255,138,61,.8)"; ctx.shadowBlur = 8;
-      ctx.beginPath();
-      for (k = 0; k <= 64; k++){ var p = loopPt(k / 64 * Math.PI * 2); project(p[0], yk(p[1]), p[2], tmp); if (k) ctx.lineTo(tmp[0], tmp[1]); else ctx.moveTo(tmp[0], tmp[1]); }
-      ctx.stroke();
-      ctx.restore();
-
-      /* markers, far to near */
-      var ms = MARKERS.map(function(m){ var y = yk(H(m.x, m.z) + 30); project(m.x, y, m.z, tmp); return {m:m, x:tmp[0], y:tmp[1], z:tmp[2]}; })
-                      .sort(function(a, b){ return a.z - b.z; });
-      ms.forEach(function(o){ label(o.x, o.y, o.m[lang], o.m.take); });
-
-      /* the glider */
-      var gp = loopPt(state.t * .35);
-      project(gp[0], yk(gp[1]), gp[2], tmp);
-      var gx = tmp[0], gy = tmp[1];
-      var grad = ctx.createLinearGradient(gx - 13, 0, gx + 13, 0);
-      grad.addColorStop(0, "#2BA864"); grad.addColorStop(.333, "#2BA864"); grad.addColorStop(.334, "#F7C21B"); grad.addColorStop(.5, "#F7C21B"); grad.addColorStop(.501, "#E53935"); grad.addColorStop(1, "#E53935");
-      ctx.lineCap = "round";
-      ctx.strokeStyle = "rgba(241,245,251,.75)"; ctx.lineWidth = .9;
-      ctx.beginPath(); ctx.moveTo(gx - 11, gy - 14); ctx.lineTo(gx, gy); ctx.moveTo(gx + 11, gy - 14); ctx.lineTo(gx, gy); ctx.stroke();
-      ctx.strokeStyle = grad; ctx.lineWidth = 4.5;
-      ctx.beginPath(); ctx.moveTo(gx - 13, gy - 13); ctx.quadraticCurveTo(gx, gy - 26, gx + 13, gy - 13); ctx.stroke();
-      ctx.fillStyle = "#F1F5FB"; ctx.beginPath(); ctx.arc(gx, gy + 1, 3, 0, Math.PI * 2); ctx.fill();
-    }
-
-    function frame(now){
-      requestAnimationFrame(frame);
-      if (!state.visible || document.hidden) return;
-      if (now - state.last < 33) return;
-      var dt = state.last ? Math.min(.1, (now - state.last) / 1000) : 0;
-      state.last = now;
-      var auto = state.playing && !state.dragging && now > state.resumeAt;
-      if (auto) yaw += dt * .07;
-      if (!reduce) state.t += dt;
-      draw();
-    }
-
-    resize();
-    draw();
-    window.addEventListener("resize", function(){ resize(); draw(); });
-    if ("IntersectionObserver" in window){
-      new IntersectionObserver(function(en){ state.visible = en[0].isIntersecting; }, {rootMargin:"100px"}).observe(cv);
-    }
-    requestAnimationFrame(frame);
-
-    /* interaction */
-    var hint = document.getElementById("map-hint"), lastX = 0, lastY = 0;
-    function hideHint(){ if (hint) hint.style.opacity = "0"; }
-    cv.addEventListener("pointerdown", function(e){ state.dragging = true; lastX = e.clientX; lastY = e.clientY; try { cv.setPointerCapture(e.pointerId); } catch(err){} hideHint(); });
-    cv.addEventListener("pointermove", function(e){
-      if (!state.dragging) return;
-      yaw += (e.clientX - lastX) * .006;
-      pitch = Math.max(.34, Math.min(1.12, pitch + (e.clientY - lastY) * .004));
-      lastX = e.clientX; lastY = e.clientY;
-      draw();
-    });
-    function endDrag(){ if (state.dragging){ state.dragging = false; state.resumeAt = performance.now() + 3500; } }
-    cv.addEventListener("pointerup", endDrag); cv.addEventListener("pointercancel", endDrag);
-    cv.addEventListener("keydown", function(e){
-      var used = true;
-      if (e.key === "ArrowLeft") yaw -= .15; else if (e.key === "ArrowRight") yaw += .15;
-      else if (e.key === "ArrowUp") pitch = Math.min(1.12, pitch + .06); else if (e.key === "ArrowDown") pitch = Math.max(.34, pitch - .06);
-      else used = false;
-      if (used){ e.preventDefault(); hideHint(); state.resumeAt = performance.now() + 3500; draw(); }
-    });
-    document.getElementById("map-left").addEventListener("click", function(){ yaw -= .35; hideHint(); state.resumeAt = performance.now() + 3500; draw(); });
-    document.getElementById("map-right").addEventListener("click", function(){ yaw += .35; hideHint(); state.resumeAt = performance.now() + 3500; draw(); });
-    playBtn.addEventListener("click", function(){ state.playing = !state.playing; updatePlayLabel(); });
-    state.redraw = draw;
-  })();
-
-  /* ---------- start ---------- */
-  document.getElementById("yr").textContent = new Date().getFullYear();
-  var start = "es";
-  try {
-    var saved = localStorage.getItem("flyniton-lang");
-    if (saved === "es" || saved === "en") start = saved;
-    else if (navigator.language && !/^es\b/i.test(navigator.language)) start = "en";
-  } catch(e){ if (navigator.language && !/^es\b/i.test(navigator.language)) start = "en"; }
-  applyLang(start);
-  if (map && map.redraw) map.redraw();
-  onScroll();
-})();
-
-</script>
-
 </body>
 </html>
