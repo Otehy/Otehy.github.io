@@ -1,0 +1,59 @@
+/* Flyniton: página de la Escuela de Parapente Tungurahua */
+
+/* portada */
+.s-hero{position:relative;min-height:calc(100svh - var(--bar));display:flex;align-items:flex-end;overflow:hidden;background:var(--pasture);color:#fff}
+.s-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.s-hero-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(14,40,26,.94) 0%,rgba(14,40,26,.6) 45%,rgba(14,40,26,.1) 80%)}
+.s-hero-inner{position:relative;width:100%;padding-block:clamp(40px,8vh,88px)}
+.s-logo{width:clamp(96px,10vw,132px);height:auto;margin-bottom:1.1rem;border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.s-title{font-size:clamp(2.7rem,1.4rem + 6vw,7.4rem);font-weight:800;font-stretch:110%;line-height:.95;letter-spacing:-.03em}
+.s-title .ln{display:block;overflow:hidden;padding-bottom:.04em}
+.s-title .ln>span{display:inline-block}
+.hero-lead{margin-top:1.1rem;font-size:var(--fs-lead);line-height:1.45;max-width:54ch;color:#E3EEE6}
+.badge{display:inline-block;margin-bottom:1rem;padding:.35rem .75rem;border-radius:999px;background:rgba(246,197,27,.16);color:var(--sun);font-size:.92rem;font-weight:700;box-shadow:inset 0 0 0 1.5px rgba(246,197,27,.6)}
+@media (max-width:640px){.s-title{font-size:12.5vw}.s-hero .actions .btn{flex:1 1 100%}}
+
+/* instructor */
+.instructor-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(32px,6vw,96px);align-items:start}
+.instructor-photo{position:sticky;top:calc(var(--bar) + 24px)}
+.instructor-photo img{width:100%;max-width:380px;aspect-ratio:4/5;object-fit:cover;border-radius:6px;box-shadow:0 24px 50px -24px rgba(16,35,63,.5)}
+.role{margin-top:.5rem;font-size:var(--fs-lead);color:var(--muted)}
+.creds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,28px);margin-top:1.75rem}
+.creds>div{border-top:3px solid var(--ink);padding-top:.6rem}
+.creds>div:nth-child(1){border-color:var(--green)}
+.creds>div:nth-child(2){border-color:var(--sun)}
+.creds>div:nth-child(3){border-color:var(--red)}
+.creds dt{font-size:.92rem;color:var(--muted)}
+.creds dd{margin-top:.15rem;font-size:clamp(1.5rem,1rem + 1.6vw,2.4rem);font-weight:800;font-stretch:106%;line-height:1;font-variant-numeric:tabular-nums}
+.timeline-v{position:relative;margin-top:2.2rem;padding-left:0}
+.timeline-v::before{content:"";position:absolute;left:3.3rem;top:.5rem;bottom:.5rem;width:2px;background:var(--rule)}
+.timeline-v li{position:relative;display:grid;grid-template-columns:3.3rem minmax(0,1fr);column-gap:1.6rem;padding:.85rem 0}
+.timeline-v li::after{content:"";position:absolute;left:calc(3.3rem - 6px);top:1.25rem;width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 3px var(--green)}
+.timeline-v time{font-weight:800;font-size:1.15rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.timeline-v b{display:block;font-size:1.12rem;line-height:1.3}
+.timeline-v p{margin-top:.25rem;color:var(--muted);line-height:1.45}
+.siv{margin-top:1.4rem;padding:.9rem 1rem;background:var(--sky-pale);border-radius:6px}
+.appi-note{margin-top:1.2rem;font-size:.97rem;color:var(--muted)}
+.appi-note a{color:var(--ink);font-weight:700;text-underline-offset:3px}
+@media (max-width:860px){
+  .instructor-grid{grid-template-columns:1fr}
+  .instructor-photo{position:static;display:grid;grid-template-columns:120px 1fr;gap:1rem;align-items:end}
+  .instructor-photo figcaption{margin:0}
+  .creds{grid-template-columns:1fr 1fr 1fr}
+}
+@media (max-width:420px){.creds{grid-template-columns:1fr 1fr}}
+
+/* curso */
+.course{background:var(--sky-pale)}
+.course-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(36px,6vw,96px)}
+.course-grid .lead{margin-top:1rem}
+.course-grid p+p{margin-top:1rem;color:var(--muted)}
+@media (max-width:900px){.course-grid{grid-template-columns:1fr}}
+
+/* inscripción sobre verde */
+.enrol{margin-top:0}
+.enrol .h2{margin-bottom:.5rem}
+.enrol-contact{margin-top:.4rem;border-top-color:rgba(255,255,255,.6)}
+.enrol-contact>div{border-bottom-color:var(--rule-dark)}
+.enrol-contact a{color:var(--sun)}
+.enrol-contact small{color:#B9D2C2}
